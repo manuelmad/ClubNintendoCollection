@@ -1,13 +1,14 @@
-import { Image, StyleSheet, Text, View } from "react-native";
+import { Link } from "expo-router";
+import { Image, Pressable, StyleSheet, Text, View } from "react-native";
 
 // Asegúrate de que los nombres de archivo coincidan con los que tienes en assets/images/flags
 const flags = [
-  require("@/assets/images/flags/mexico.png"),
-  require("@/assets/images/flags/venezuela.webp"),
-  require("@/assets/images/flags/colombia.webp"),
-  require("@/assets/images/flags/chile.png"),
-  require("@/assets/images/flags/argentina.png"),
-  require("@/assets/images/flags/central-america-map.png"),
+  { image: require("@/assets/images/flags/mexico.png"), route: "/mexico/mexico" },
+  { image: require("@/assets/images/flags/venezuela.webp"), route: "/venezuela/venezuela" },
+  { image: require("@/assets/images/flags/colombia.webp"), route: "/colombia/colombia" },
+  { image: require("@/assets/images/flags/chile.png"), route: "/chile/chile" },
+  { image: require("@/assets/images/flags/argentina.png"), route: "/argentina/argentina" },
+  { image: require("@/assets/images/flags/central-america-map.png"), route: "/central-america/central-america" },
 ];
 
 export default function Index() {
@@ -16,9 +17,11 @@ export default function Index() {
       <Text style={styles.title}>Mis Colecciones</Text>
       <View style={styles.grid}>
         {flags.map((flag, index) => (
-          <View key={index} style={styles.card}>
-            <Image source={flag} style={styles.image} resizeMode="contain" />
-          </View>
+          <Link key={index} href={flag.route} asChild>
+            <Pressable style={styles.card}>
+              <Image source={flag.image} style={styles.image} resizeMode="contain" />
+            </Pressable>
+          </Link>
         ))}
       </View>
     </View>
