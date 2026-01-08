@@ -1,6 +1,7 @@
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Link, useLocalSearchParams } from "expo-router";
-import { useState } from "react";
-import { FlatList, Image, StyleSheet, Switch, Text, View } from 'react-native';
+import { useEffect, useState } from "react";
+import { FlatList, Image, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import inventory from '../inventory';
 
@@ -11,22 +12,23 @@ const images = require.context('../images', true, /\.jpg$/);
 export default function CoversScreen() {
   const { year } = useLocalSearchParams();
   const { country } = useLocalSearchParams();
+  const [data, setData] = useState(inventory);
 
-  const [owned, setOwned] = useState("NO");
-
-  const changeOwnded = () => {
-    if (owned === "NO") {
-      setOwned("YES");
-    } else {
-      setOwned("NO");
-    }
-  }
+  useEffect(() => {
+    const loadData = async () => {
+      const storedDb = await AsyncStorage.getItem("db");
+      if (storedDb) {
+        setData(JSON.parse(storedDb));
+      }
+    };
+    loadData();
+  }, []);
 
   // Filtrar el inventario por el año seleccionado
-  const filteredData = inventory.filter(item => item["YEAR EDIT"] == year && item["OVERALL NUMBER"] !== "SPECIAL" && item["OVERALL NUMBER"] !== "SPECIAL2");
+  const filteredData = data.filter(item => item["YEAR EDIT"] == year && item["OVERALL NUMBER"] !== "SPECIAL" && item["OVERALL NUMBER"] !== "SPECIAL2");
 
  // Filtrar el inventario por especiales
-  const specialsFilteredData = inventory.filter(item => item["OVERALL NUMBER"] == "SPECIAL" || item["OVERALL NUMBER"] == "SPECIAL2");
+  const specialsFilteredData = data.filter(item => item["OVERALL NUMBER"] == "SPECIAL" || item["OVERALL NUMBER"] == "SPECIAL2");
 
 
   const renderItem = ({ item, index }) => {
@@ -44,7 +46,21 @@ export default function CoversScreen() {
     }
 
     return (
-      <View style={[styles.card, item["OWNED"] === "NO" ? {borderColor: "#f9f9f9"} : { borderColor: "#41e341ff" }]}>
+      <View style={[styles.card, item["OWNED"] === "NO" ? {borderColor: "#f0394d"} : { borderColor: "#41e341ff" }]}
+        // onPress={async () => {
+        //   const newData = data.map((el) => {
+        //     if (el["OVERALL NUMBER"] === item["OVERALL NUMBER"]) {
+        //       console.log(el);
+        //       return { ...el, "OWNED": el["OWNED"] === "NO" ? "YES" : "NO" };
+        //     }
+            
+        //     return el;
+        //   });
+        //   setData(newData);
+        //   await AsyncStorage.setItem("db", JSON.stringify(newData));
+        // }}
+        onLongPress={() => {console.log("Long Pressed")}}
+      >
         {imageSource ? (
           <Image source={imageSource} style={styles.image} resizeMode="contain" />
         ) : (
@@ -56,10 +72,6 @@ export default function CoversScreen() {
         <Text style={styles.coverText} numberOfLines={2}>Año {item["YEAR EDIT"]} No. {item["YEAR NUMBER"]}</Text>
         <Text style={styles.coverText} numberOfLines={2}>{item["MONTH"]}-{item["YEAR DATE"]}</Text>
         <Text style={styles.coverText} numberOfLines={3}>Poster: {item["POSTER THEME"] == '-' ? 'No incluye' : item["POSTER THEME"]}</Text>
-        <Switch
-          value={owned}
-          onValueChange={changeOwnded}
-        />
       </View>
     );
   };
@@ -80,7 +92,7 @@ export default function CoversScreen() {
     }
 
     return (
-      <View style={styles.card}>
+      <View style={[styles.card, item["OWNED"] === "NO" ? {borderColor: "#f0394d"} : { borderColor: "#41e341ff" }]}>
         {imageSource ? (
           <Image source={imageSource} style={styles.image} resizeMode="contain" />
         ) : (
@@ -90,10 +102,6 @@ export default function CoversScreen() {
         )}
         <Text style={styles.coverText} numberOfLines={2}>{item["MONTH"]}-{item["YEAR DATE"]}</Text>
         <Text style={styles.coverText} numberOfLines={4}>Poster: {item["POSTER THEME"] == '-' ? 'No incluye' : item["POSTER THEME"]}</Text>
-          <Switch
-          value={owned}
-          onValueChange={setOwned}
-        />
       </View>
     );
 

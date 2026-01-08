@@ -636,7 +636,7 @@ const inventory =[
         "YEAR NUMBER": 1,
         "OVERALL NUMBER": 62,
         "COVER": "MARIO KART 64",
-        "OWNED": "YES",
+        "OWNED": "NO",
         "POSTER THEME": "MORTAL KOMBAT TRILOGY / ARTE EN SOBRES"
     },
     {
