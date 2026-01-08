@@ -9,6 +9,7 @@ const images = require.context('../images', true, /\.jpg$/);
 
 export default function CoversScreen() {
   const { year } = useLocalSearchParams();
+  const { country } = useLocalSearchParams();
 
   // Filtrar el inventario por el año seleccionado
   const filteredData = inventory.filter(item => item["YEAR EDIT"] == year && item["OVERALL NUMBER"] !== "SPECIAL" && item["OVERALL NUMBER"] !== "SPECIAL2");
@@ -82,7 +83,7 @@ export default function CoversScreen() {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.header}>
-        <Text style={styles.title}>Portadas {year ? `Año ${year}` : 'Especiales'}</Text>
+        <Text style={styles.title}>Revistas {year ? `Año ${year}` : 'Especiales'} {country}</Text>
       </View>
       {year ? 
           <FlatList
