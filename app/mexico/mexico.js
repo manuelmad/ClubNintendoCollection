@@ -32,34 +32,32 @@ const years = [
   { year_date: 2018, year_edit: 27}
 ]
 
-const years_edit = years.map(year => year.year_edit);
-
 export default function MexicoScreen() {
   return (
     <SafeAreaView style={styles.container}>
-    <ScrollView>
-    <View >
       <Text style={styles.title}>Colección Mexico</Text>
-       <View style={styles.grid}>
-          {years.map((year, index) => (
-            <Link key={index} href={{ pathname: "/mexico/covers/covers", params: { year: year.year_edit } }} asChild>
-              <Pressable style={styles.card}>
-                <Text style={styles.text}>Año {year.year_edit}</Text>
-                <Text style={styles.text}>({year.year_date})</Text>
-              </Pressable>
-            </Link>
-          ))}
-          <Link href={{ pathname: "/mexico/covers/covers" }} asChild>
-              <Pressable style={styles.card}>
-                <Text style={styles.text}>Especiales</Text>
-              </Pressable>
-            </Link>
+      <ScrollView>
+        <View >
+        <View style={styles.grid}>
+            {years.map((year, index) => (
+              <Link key={index} href={{ pathname: "/mexico/covers/covers", params: { year: year.year_edit } }} asChild>
+                <Pressable style={styles.card}>
+                  <Text style={styles.text}>Año {year.year_edit}</Text>
+                  <Text style={styles.text}>({year.year_date})</Text>
+                </Pressable>
+              </Link>
+            ))}
+            <Link href={{ pathname: "/mexico/covers/covers" }} asChild>
+                <Pressable style={styles.card}>
+                  <Text style={styles.text}>Especiales</Text>
+                </Pressable>
+              </Link>
+          </View>
         </View>
-        <View style={styles.footer}>
-          <Link href="/" style={styles.link}>Volver al Inicio</Link>
-        </View>
+      </ScrollView>
+      <View style={styles.footer}>
+        <Link href="/" style={styles.link}>Volver al Inicio</Link>
       </View>
-    </ScrollView>
     </SafeAreaView>
   );
 }
@@ -76,6 +74,8 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: "bold",
     marginBottom: 30,
+    // position: "fixed",
+    // top: 0,
   },
   grid: {
     flexDirection: "row",
