@@ -13,6 +13,10 @@ export default function CoversScreen() {
   // Filtrar el inventario por el año seleccionado
   const filteredData = inventory.filter(item => item["YEAR EDIT"] == year && item["OVERALL NUMBER"] !== "SPECIAL" && item["OVERALL NUMBER"] !== "SPECIAL2");
 
+ // Filtrar el inventario por especiales
+  const specialsFilteredData = inventory.filter(item => item["OVERALL NUMBER"] == "SPECIAL" || item["OVERALL NUMBER"] == "SPECIAL2");
+
+
   const renderItem = ({ item, index }) => {
     // Asumimos que las imágenes están enumeradas 1.jpg, 2.jpg... coincidiendo con el orden del inventario filtrado
     const imageNumber = index + 1;
@@ -44,20 +48,61 @@ export default function CoversScreen() {
     );
   };
 
+  const renderSpecialItem = ({ item }) => {
+    // Asumimos que las imágenes están enumeradas 1.jpg, 2.jpg... coincidiendo con el orden del inventario filtrado
+    const imageNumber = item["OVERALL NUMBER"] == "SPECIAL" ? "SPECIAL" : "SPECIAL2" ;
+    let imageSource = null;
+
+
+    try {
+    // Construimos la ruta relativa para require.context: ./year_edit/number.jpg
+    // Nota: require.context usa rutas relativas desde este archivo
+    const imagePath = `./${item["YEAR EDIT"]}/${imageNumber}.jpg`;
+    imageSource = images(imagePath);
+    } catch (error) {
+      console.log(`Imagen no encontrada: ${item["YEAR EDIT"]}/${imageNumber}.jpg`);
+    }
+
+    return (
+      <View style={styles.card}>
+        {imageSource ? (
+          <Image source={imageSource} style={styles.image} resizeMode="contain" />
+        ) : (
+          <View style={[styles.image, styles.placeholder]}>
+            <Text style={styles.placeholderText}>No Image</Text>
+          </View>
+        )}
+        <Text style={styles.coverText} numberOfLines={2}>{item["MONTH"]}-{item["YEAR DATE"]}</Text>
+        <Text style={styles.coverText} numberOfLines={4}>Poster: {item["POSTER THEME"] == '-' ? 'No incluye' : item["POSTER THEME"]}</Text>
+      </View>
+    );
+
+  };
+
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.header}>
-        <Text style={styles.title}>Portadas Año {year}</Text>
+        <Text style={styles.title}>Portadas {year ? `Año ${year}` : 'Especiales'}</Text>
       </View>
-      
-      <FlatList
-        data={filteredData}
-        renderItem={renderItem}
-        keyExtractor={(item, index) => index.toString()}
-        numColumns={2}
-        contentContainerStyle={styles.grid}
-        columnWrapperStyle={styles.row}
-      />
+      {year ? 
+          <FlatList
+            data={filteredData}
+            renderItem={renderItem}
+            keyExtractor={(item, index) => index.toString()}
+            numColumns={2}
+            contentContainerStyle={styles.grid}
+            columnWrapperStyle={styles.row}
+          /> :
+          <FlatList
+            data={specialsFilteredData}
+            renderItem={renderSpecialItem}
+            keyExtractor={(item, index) => index.toString()}
+            numColumns={2}
+            contentContainerStyle={styles.grid}
+            columnWrapperStyle={styles.row}
+          />
+      }
+     
 
       <View style={styles.footer}>
         <Link href="/mexico/mexico" style={styles.link}>Volver a Años</Link>

@@ -87,7 +87,7 @@ const inventory =[
         "OVERALL NUMBER": "SPECIAL",
         "COVER": "CONTROLES SPECIAL",
         "OWNED": "NO",
-        "POSTER THEME": "?"
+        "POSTER THEME": "-"
     },
     {
         "YEAR EDIT": 1,
@@ -217,7 +217,7 @@ const inventory =[
         "OVERALL NUMBER": "SPECIAL",
         "COVER": "STREET FIGHTER II SPECIAL",
         "OWNED": "NO",
-        "POSTER THEME": "?"
+        "POSTER THEME": "-"
     },
     {
         "YEAR EDIT": 2,
@@ -677,7 +677,7 @@ const inventory =[
         "OVERALL NUMBER": "SPECIAL",
         "COVER": "MARIO - ARTE - SPECIAL",
         "OWNED": "NO",
-        "POSTER THEME": "?"
+        "POSTER THEME": "-"
     },
     {
         "YEAR EDIT": 6,
@@ -810,7 +810,7 @@ const inventory =[
         "OVERALL NUMBER": "SPECIAL",
         "COVER": "ENCICLOPEDIA - CONSOLAS - SPECIAL",
         "OWNED": "NO",
-        "POSTER THEME": "?"
+        "POSTER THEME": "-"
     },
     {
         "YEAR EDIT": 7,
@@ -1026,7 +1026,7 @@ const inventory =[
         "OVERALL NUMBER": "SPECIAL",
         "COVER": "POKEMON - SPECIAL",
         "OWNED": "NO",
-        "POSTER THEME": "?"
+        "POSTER THEME": "-"
     },
     {
         "YEAR EDIT": 9,
@@ -1244,7 +1244,7 @@ const inventory =[
         "OVERALL NUMBER": "SPECIAL",
         "COVER": "POKEMON - SPECIAL",
         "OWNED": "NO",
-        "POSTER THEME": "?"
+        "POSTER THEME": "POKÉMON / MEJORES DIBUJOS POKÉMON DE LOS LECTORES"
     },
     {
         "YEAR EDIT": 10,
@@ -1410,7 +1410,7 @@ const inventory =[
         "OVERALL NUMBER": "SPECIAL",
         "COVER": "ZELDA - SPECIAL",
         "OWNED": "NO",
-        "POSTER THEME": "?"
+        "POSTER THEME": "THE LEGEND OF ZELDA: OCARINA OF TIME"
     },
     {
         "YEAR EDIT": 11,
@@ -1655,7 +1655,7 @@ const inventory =[
         "COVER": "NINTENDO - GAMECUBE - SPECIAL",
         "OWNED": "NO",
         "POSTER": "-",
-        "POSTER THEME": "?",
+        "POSTER THEME": "-",
         "OBSERVATION": "-"
     },
     {
@@ -1823,7 +1823,19 @@ const inventory =[
         "COVER": "METROID PRIME 2 ECHOES - SPECIAL",
         "OWNED": "NO",
         "POSTER": "-",
-        "POSTER THEME": "?",
+        "POSTER THEME": "-",
+        "OBSERVATION": "-"
+    },
+    {
+        "YEAR EDIT": 13,
+        "YEAR DATE": 2004,
+        "MONTH": "OCTUBRE",
+        "YEAR NUMBER": "SPECIAL2",
+        "OVERALL NUMBER": "SPECIAL2",
+        "COVER": "160 PORTADAS Y UN MEGAPÓSTER - SPECIAL",
+        "OWNED": "NO",
+        "POSTER": "-",
+        "POSTER THEME": "PERSONAJES DE NINTENDO Y PORTADAS DEL 2004",
         "OBSERVATION": "-"
     },
     {
@@ -2068,7 +2080,7 @@ const inventory =[
         "OVERALL NUMBER": "SPECIAL",
         "COVER": "RESIDENT EVIL - SPECIAL",
         "OWNED": "NO",
-        "POSTER THEME": "?",
+        "POSTER THEME": "RESIDENT EVIL 0 / RESIDENT EVIL",
         "OBSERVATION": "-"
     },
     {
@@ -2079,7 +2091,7 @@ const inventory =[
         "OVERALL NUMBER": "SPECIAL2",
         "COVER": "RESIDENT EVIL - SPECIAL",
         "OWNED": "NO",
-        "POSTER THEME": "?",
+        "POSTER THEME": "RESIDENT EVIL 0 / RESIDENT EVIL",
         "OBSERVATION": "-"
     },
     {
@@ -2246,7 +2258,7 @@ const inventory =[
         "OVERALL NUMBER": "SPECIAL",
         "COVER": "ARTE EN LOS JUEGOS DE MARIO - SPECIAL",
         "OWNED": "NO",
-        "POSTER THEME": "?",
+        "POSTER THEME": "EVOLUCIÓN MARIO / MARIO GALAXY",
         "OBSERVATION": "-"
     },
     {
@@ -2413,7 +2425,7 @@ const inventory =[
         "OVERALL NUMBER": "SPECIAL",
         "COVER": "SUPER SMASH BROS. - SPECIAL",
         "OWNED": "NO",
-        "POSTER THEME": "?",
+        "POSTER THEME": "-",
         "OBSERVATION": "-"
     },
     {
@@ -3265,7 +3277,7 @@ const inventory =[
         "OVERALL NUMBER": "SPECIAL",
         "COVER": "EL MUNDO DE SUPER MARIO - SPECIAL",
         "OWNED": "NO",
-        "POSTER THEME": "?",
+        "POSTER THEME": "-",
     },
     {
         "YEAR EDIT": 23,

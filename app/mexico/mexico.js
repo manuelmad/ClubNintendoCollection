@@ -32,6 +32,8 @@ const years = [
   { year_date: 2018, year_edit: 27}
 ]
 
+const years_edit = years.map(year => year.year_edit);
+
 export default function MexicoScreen() {
   return (
     <SafeAreaView style={styles.container}>
@@ -47,6 +49,11 @@ export default function MexicoScreen() {
               </Pressable>
             </Link>
           ))}
+          <Link href={{ pathname: "/mexico/covers/covers" }} asChild>
+              <Pressable style={styles.card}>
+                <Text style={styles.text}>Especiales</Text>
+              </Pressable>
+            </Link>
         </View>
         <View style={styles.footer}>
           <Link href="/" style={styles.link}>Volver al Inicio</Link>
