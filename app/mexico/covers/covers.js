@@ -1,7 +1,7 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Link, useLocalSearchParams } from "expo-router";
 import { useEffect, useState } from "react";
-import { FlatList, Image, StyleSheet, Text, View } from 'react-native';
+import { FlatList, Image, Pressable, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import inventory from '../inventory';
 
@@ -46,21 +46,7 @@ export default function CoversScreen() {
     }
 
     return (
-      <View style={[styles.card, item["OWNED"] === "NO" ? {borderColor: "#f0394d"} : { borderColor: "#41e341ff" }]}
-        // onPress={async () => {
-        //   const newData = data.map((el) => {
-        //     if (el["OVERALL NUMBER"] === item["OVERALL NUMBER"]) {
-        //       console.log(el);
-        //       return { ...el, "OWNED": el["OWNED"] === "NO" ? "YES" : "NO" };
-        //     }
-            
-        //     return el;
-        //   });
-        //   setData(newData);
-        //   await AsyncStorage.setItem("db", JSON.stringify(newData));
-        // }}
-        onLongPress={() => {console.log("Long Pressed")}}
-      >
+      <View style={[styles.card, item["OWNED"] === "NO" ? {borderColor: "#f0394d"} : { borderColor: "#006845" }]}>
         {imageSource ? (
           <Image source={imageSource} style={styles.image} resizeMode="contain" />
         ) : (
@@ -72,6 +58,22 @@ export default function CoversScreen() {
         <Text style={styles.coverText} numberOfLines={2}>Año {item["YEAR EDIT"]} No. {item["YEAR NUMBER"]}</Text>
         <Text style={styles.coverText} numberOfLines={2}>{item["MONTH"]}-{item["YEAR DATE"]}</Text>
         <Text style={styles.coverText} numberOfLines={3}>Poster: {item["POSTER THEME"] == '-' ? 'No incluye' : item["POSTER THEME"]}</Text>
+        <Pressable style={[styles.button, item["OWNED"] === "NO" ? {backgroundColor: "#f0394d"} : { backgroundColor: "#006845" }]}
+          onPress={
+            async () => {
+              const newData = data.map((el) => {
+                if (el["OVERALL NUMBER"] === item["OVERALL NUMBER"]) {
+                  return { ...el, "OWNED": el["OWNED"] === "NO" ? "YES" : "NO" };
+                }
+                
+                return el;
+              });
+              setData(newData);
+              await AsyncStorage.setItem("db", JSON.stringify(newData));
+            }
+          }>
+          <Text style={styles.buttonText}>{item["OWNED"] === "NO" ? "NO" : "SÍ"}</Text>
+        </Pressable>
       </View>
     );
   };
@@ -92,7 +94,7 @@ export default function CoversScreen() {
     }
 
     return (
-      <View style={[styles.card, item["OWNED"] === "NO" ? {borderColor: "#f0394d"} : { borderColor: "#41e341ff" }]}>
+      <View style={[styles.card, item["OWNED"] === "NO" ? {borderColor: "#f0394d"} : { borderColor: "#006845" }]}>
         {imageSource ? (
           <Image source={imageSource} style={styles.image} resizeMode="contain" />
         ) : (
@@ -102,6 +104,22 @@ export default function CoversScreen() {
         )}
         <Text style={styles.coverText} numberOfLines={2}>{item["MONTH"]}-{item["YEAR DATE"]}</Text>
         <Text style={styles.coverText} numberOfLines={4}>Poster: {item["POSTER THEME"] == '-' ? 'No incluye' : item["POSTER THEME"]}</Text>
+         <Pressable style={[styles.button, item["OWNED"] === "NO" ? {backgroundColor: "#f0394d"} : { backgroundColor: "#006845" }]}
+          onPress={
+            async () => {
+              const newData = data.map((el) => {
+                if (el["COVER"] === item["COVER"]) {
+                  return { ...el, "OWNED": el["OWNED"] === "NO" ? "YES" : "NO" };
+                }
+                
+                return el;
+              });
+              setData(newData);
+              await AsyncStorage.setItem("db", JSON.stringify(newData));
+            }
+          }>
+          <Text style={styles.buttonText}>{item["OWNED"] === "NO" ? "NO" : "SÍ"}</Text>
+        </Pressable>
       </View>
     );
 
@@ -163,7 +181,7 @@ const styles = StyleSheet.create({
   card: {
     width: 160,
     alignItems: "center",
-    borderWidth: 4,
+    borderWidth: 1,
     backgroundColor: "#f9f9f9",
     borderRadius: 10,
     padding: 10,
@@ -200,6 +218,19 @@ const styles = StyleSheet.create({
   link: {
     color: "#007AFF",
     fontSize: 16,
+    fontWeight: "bold",
+  },
+  button: {
+    width: 140,
+    height: 30,
+    marginTop: 10,
+    borderRadius: 5,
+    justifyContent: "center",
+    alignItems: "center",
+    paddingVertical: 3,
+  },
+  buttonText: {
+    color: "#fff",
     fontWeight: "bold",
   },
 });
