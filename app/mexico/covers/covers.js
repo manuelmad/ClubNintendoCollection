@@ -16,7 +16,7 @@ export default function CoversScreen() {
 
   useEffect(() => {
     const loadData = async () => {
-      const storedDb = await AsyncStorage.getItem("db");
+      const storedDb = await AsyncStorage.getItem("mexicoDB");
       if (storedDb) {
         setData(JSON.parse(storedDb));
       }
@@ -69,7 +69,7 @@ export default function CoversScreen() {
                 return el;
               });
               setData(newData);
-              await AsyncStorage.setItem("db", JSON.stringify(newData));
+              await AsyncStorage.setItem("mexicoDB", JSON.stringify(newData));
             }
           }>
           <Text style={styles.buttonText}>{item["OWNED"] === "NO" ? "NO" : "SÍ"}</Text>
@@ -115,7 +115,7 @@ export default function CoversScreen() {
                 return el;
               });
               setData(newData);
-              await AsyncStorage.setItem("db", JSON.stringify(newData));
+              await AsyncStorage.setItem("mexicoDB", JSON.stringify(newData));
             }
           }>
           <Text style={styles.buttonText}>{item["OWNED"] === "NO" ? "NO" : "SÍ"}</Text>

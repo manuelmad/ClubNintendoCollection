@@ -30,7 +30,7 @@ export default function Index() {
           </Link>
         ))}
       </View>
-      <Text style={styles.credits}>Hecho por:</Text>
+      <Text style={styles.credits}>Desarrollado por:</Text>
       <Text style={styles.developer}>Manuel Araujo</Text>
       <Text style={styles.group}>ScanClubNintendo</Text>
     </View>
