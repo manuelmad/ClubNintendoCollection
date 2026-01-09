@@ -1,5 +1,5 @@
 import { Link } from "expo-router";
-import { Image, Pressable, StyleSheet, Text, View } from "react-native";
+import { Image, ImageBackground, Pressable, StyleSheet, Text, View } from "react-native";
 
 // Asegúrate de que los nombres de archivo coincidan con los que tienes en assets/images/flags
 const flags = [
@@ -13,7 +13,7 @@ const flags = [
 
 export default function Index() {
   return (
-    <View style={styles.container}>
+    <ImageBackground source={require("@/assets/images/background.png")} style={styles.container}>
       <Text style={styles.title}>Mis Colecciones</Text>
       <View style={styles.grid}>
         {flags.map((flag, index) => (
@@ -24,7 +24,10 @@ export default function Index() {
           </Link>
         ))}
       </View>
-    </View>
+      <Text style={styles.credits}>Hecho por:</Text>
+      <Text style={styles.developer}>Manuel Araujo</Text>
+      <Text style={styles.group}>ScanClubNintendo</Text>
+    </ImageBackground>
   );
 }
 
@@ -33,10 +36,10 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#fff",
   },
   title: {
-    fontSize: 24,
+    fontSize: 30,
+    color: "#fff",
     fontWeight: "bold",
     marginBottom: 30,
   },
@@ -46,6 +49,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     gap: 15,
     maxWidth: 300, // Restringe el ancho para forzar 2 columnas (aprox 120*2 + gap)
+    marginTop: 40,
   },
   card: {
     width: 120,
@@ -56,7 +60,24 @@ const styles = StyleSheet.create({
     borderRadius: 10,
   },
   image: {
-    width: "80%",
-    height: "80%",
+    width: "90%",
+    height: "90%",
   },
+  credits: {
+    color: "#fff",
+    marginTop: 40,
+    fontSize: 16,
+    textAlign: "center",
+  },
+    developer: {
+    color: "#fff",
+    fontSize: 20,
+    textAlign: "center",
+    fontWeight: "bold",
+  },
+    group: {
+    color: "#fff",
+    fontSize: 16,
+    textAlign: "center",
+  }
 });
