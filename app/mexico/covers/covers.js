@@ -57,7 +57,7 @@ export default function CoversScreen() {
         <Text style={styles.coverText} numberOfLines={2}>#{item["OVERALL NUMBER"]}</Text>
         <Text style={styles.coverText} numberOfLines={2}>Año {item["YEAR EDIT"]} No. {item["YEAR NUMBER"]}</Text>
         <Text style={styles.coverText} numberOfLines={2}>{item["MONTH"]}-{item["YEAR DATE"]}</Text>
-        <Text style={styles.coverText} numberOfLines={3}>Poster: {item["POSTER THEME"] == '-' ? 'No incluye' : item["POSTER THEME"]}</Text>
+        <Text style={styles.coverText} numberOfLines={4}>Poster: {item["POSTER THEME"] == '-' ? 'No incluye' : item["POSTER THEME"]}</Text>
         <Pressable style={[styles.button, item["OWNED"] === "NO" ? {backgroundColor: "#f0394d"} : { backgroundColor: "#006845" }]}
           onPress={
             async () => {
@@ -94,7 +94,7 @@ export default function CoversScreen() {
     }
 
     return (
-      <View style={[styles.card, item["OWNED"] === "NO" ? {borderColor: "#f0394d"} : { borderColor: "#006845" }]}>
+      <View style={[styles.specialCard, item["OWNED"] === "NO" ? {borderColor: "#f0394d"} : { borderColor: "#006845" }]}>
         {imageSource ? (
           <Image source={imageSource} style={styles.image} resizeMode="contain" />
         ) : (
@@ -180,6 +180,21 @@ const styles = StyleSheet.create({
   },
   card: {
     width: 160,
+    height: 370,
+    alignItems: "center",
+    borderWidth: 1,
+    backgroundColor: "#f9f9f9",
+    borderRadius: 10,
+    padding: 10,
+    elevation: 2, // Sombra en Android
+    shadowColor: "#000", // Sombra en iOS
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
+  },
+  specialCard: {
+    width: 160,
+    height: 350,
     alignItems: "center",
     borderWidth: 1,
     backgroundColor: "#f9f9f9",
@@ -228,6 +243,8 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     paddingVertical: 3,
+    position: "absolute",
+    bottom: 10,
   },
   buttonText: {
     color: "#fff",
