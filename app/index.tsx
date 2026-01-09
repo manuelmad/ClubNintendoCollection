@@ -1,5 +1,5 @@
 import { Link } from "expo-router";
-import { Image, ImageBackground, Pressable, StyleSheet, Text, View } from "react-native";
+import { Image, Pressable, StyleSheet, Text, View } from "react-native";
 
 // Asegúrate de que los nombres de archivo coincidan con los que tienes en assets/images/flags
 const flags = [
@@ -13,8 +13,14 @@ const flags = [
 
 export default function Index() {
   return (
-    <ImageBackground source={require("@/assets/images/background.png")} style={styles.container}>
-      <Text style={styles.title}>Mis Colecciones</Text>
+    <View  style={styles.container}>
+      <Image style={styles.backgroundImage} source={require("@/assets/images/background.png")}></Image>
+      <View style={styles.titleContainer}>
+        <Image style={styles.Mis} source={require("@/assets/images/Mis.png")}></Image>
+        <Image style={styles.Colecciones} source={require("@/assets/images/Colecciones.png")}></Image>
+      </View>
+
+      {/* <Text style={styles.title}>Mis Colecciones</Text> */}
       <View style={styles.grid}>
         {flags.map((flag, index) => (
           <Link key={index} href={flag.route} asChild>
@@ -27,7 +33,7 @@ export default function Index() {
       <Text style={styles.credits}>Hecho por:</Text>
       <Text style={styles.developer}>Manuel Araujo</Text>
       <Text style={styles.group}>ScanClubNintendo</Text>
-    </ImageBackground>
+    </View>
   );
 }
 
@@ -37,19 +43,51 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
   },
-  title: {
-    fontSize: 30,
-    color: "#fff",
-    fontWeight: "bold",
-    marginBottom: 30,
+  backgroundImage: {
+    position: "absolute",
+    top: -50,
+    left: 0,
+    width: "100%",
+    height: "100%",
+    resizeMode: "cover",
+    opacity: 0.5,
   },
+  titleContainer: {
+    position: "absolute",
+    top: 60,
+    width: "100%",
+    // height: 50,
+    flexDirection: "column",
+    justifyContent: "space-between",
+    alignItems: "center",
+  },
+  Mis: {
+    // position: "absolute",
+    // top: 50,
+    // left: 80,
+    width: "25%",
+    resizeMode: "contain",
+  },
+  Colecciones: {
+    // position: "absolute",
+    // top: 100,
+    // left: 20,
+    width: "80%",
+    resizeMode: "contain",
+  },
+  // title: {
+  //   fontSize: 30,
+  //   color: "#fff",
+  //   fontWeight: "bold",
+  //   marginBottom: 30,
+  // },
   grid: {
     flexDirection: "row",
     flexWrap: "wrap",
     justifyContent: "center",
     gap: 15,
     maxWidth: 300, // Restringe el ancho para forzar 2 columnas (aprox 120*2 + gap)
-    marginTop: 40,
+    marginTop: 120,
   },
   card: {
     width: 120,
@@ -70,7 +108,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
   },
     developer: {
-    color: "#fff",
+    color: "#5c5b5bff",
     fontSize: 20,
     textAlign: "center",
     fontWeight: "bold",
