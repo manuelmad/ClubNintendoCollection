@@ -46,7 +46,7 @@ export default function CoversScreen() {
     }
 
     return (
-      <View style={[styles.card, item["OWNED"] === "NO" ? {borderColor: "#f0394d"} : { borderColor: "#006845" }]}>
+      <View style={[styles.card, item["OWNED"] === "NO" ? {backgroundColor: "#f3e1e3"} : { backgroundColor: "#c6eadf" }]}>
         {imageSource ? (
           <Image source={imageSource} style={styles.image} resizeMode="contain" />
         ) : (
@@ -94,7 +94,7 @@ export default function CoversScreen() {
     }
 
     return (
-      <View style={[styles.specialCard, item["OWNED"] === "NO" ? {borderColor: "#f0394d"} : { borderColor: "#006845" }]}>
+      <View style={[styles.specialCard, item["OWNED"] === "NO" ? {backgroundColor: "#f3e1e3"} : { backgroundColor: "#c6eadf" }]}>
         {imageSource ? (
           <Image source={imageSource} style={styles.image} resizeMode="contain" />
         ) : (
@@ -182,29 +182,29 @@ const styles = StyleSheet.create({
     width: 160,
     height: 370,
     alignItems: "center",
-    borderWidth: 1,
-    backgroundColor: "#f9f9f9",
+    // borderWidth: 1,
+    // backgroundColor: "#f9f9f9",
     borderRadius: 10,
     padding: 10,
-    elevation: 2, // Sombra en Android
-    shadowColor: "#000", // Sombra en iOS
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.1,
-    shadowRadius: 4,
+    // elevation: 2, // Sombra en Android
+    // shadowColor: "#f0394d", // Sombra en iOS
+    // shadowOffset: { width: 0, height: 2 },
+    // shadowOpacity: 0.1,
+    // shadowRadius: 4,
   },
   specialCard: {
     width: 160,
     height: 350,
     alignItems: "center",
-    borderWidth: 1,
-    backgroundColor: "#f9f9f9",
+    // borderWidth: 1,
+    // backgroundColor: "#f9f9f9",
     borderRadius: 10,
     padding: 10,
-    elevation: 2, // Sombra en Android
-    shadowColor: "#000", // Sombra en iOS
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.1,
-    shadowRadius: 4,
+    // elevation: 2, // Sombra en Android
+    // shadowColor: "#000", // Sombra en iOS
+    // shadowOffset: { width: 0, height: 2 },
+    // shadowOpacity: 0.1,
+    // shadowRadius: 4,
   },
   image: {
     width: 140,
