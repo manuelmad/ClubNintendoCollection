@@ -17,8 +17,8 @@ export default function CoversScreen() {
   useEffect(() => {
     const loadData = async () => {
       // Esta línea la uso para limpiar la base de datos almacenada en AsyncStorage durante las pruebas
-      //await AsyncStorage.removeItem('mexicoDB')
-      const storedDb = await AsyncStorage.getItem("mexicoDB");
+      //await AsyncStorage.removeItem('venezuelaDB')
+      const storedDb = await AsyncStorage.getItem("venezuelaDB");
       if (storedDb) {
         setData(JSON.parse(storedDb));
       }
@@ -71,7 +71,7 @@ export default function CoversScreen() {
                 return el;
               });
               setData(newData);
-              await AsyncStorage.setItem("mexicoDB", JSON.stringify(newData));
+              await AsyncStorage.setItem("venezuelaDB", JSON.stringify(newData));
             }
           }>
           <Text style={styles.buttonText}>{item["OWNED"] === "NO" ? "NO" : "SÍ"}</Text>
@@ -117,7 +117,7 @@ export default function CoversScreen() {
                 return el;
               });
               setData(newData);
-              await AsyncStorage.setItem("mexicoDB", JSON.stringify(newData));
+              await AsyncStorage.setItem("venezuelaDB", JSON.stringify(newData));
             }
           }>
           <Text style={styles.buttonText}>{item["OWNED"] === "NO" ? "NO" : "SÍ"}</Text>
@@ -153,7 +153,7 @@ export default function CoversScreen() {
      
 
       <View style={styles.footer}>
-        <Link href="/mexico/mexico" style={styles.link}>Volver a Años</Link>
+        <Link href="/venezuela/venezuela" style={styles.link}>Volver a Años</Link>
       </View>
     </SafeAreaView>
   );
@@ -169,7 +169,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   title: {
-    fontSize: 24,
+    fontSize: 22,
     fontWeight: "bold",
   },
   grid: {
