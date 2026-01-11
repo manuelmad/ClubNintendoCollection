@@ -76,7 +76,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
   },
   text: {
-    color: "#fff",
+    color: "#3c3c3c",
     fontWeight: "bold",
   },
     footer: {
