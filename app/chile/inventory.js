@@ -237,7 +237,7 @@ const inventory = [
         "OVERALL NUMBER": 23,
         "COVER": "STUNT RACE FX",
         "OWNED": "NO",
-        "POSTER THEME": "STREET FIGHTER II TURBO / KING OF FIGHTERS"
+        "POSTER THEME": "STREET FIGHTER II TURBO / KING OF DRAGONS"
     },
     {
         "YEAR EDIT": 3,
