@@ -3562,7 +3562,7 @@ const inventory =[
         "MONTH": "FEBRERO",
         "YEAR NUMBER": 2,
         "OVERALL NUMBER": 296,
-        "COVER": "BAYONETTA",
+        "COVER": "BAYONETTA 2",
         "OWNED": "NO",
         "POSTER THEME": "-",
         
