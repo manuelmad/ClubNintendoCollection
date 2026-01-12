@@ -29,7 +29,7 @@ export default function CentralAmericaScreen() {
       <Text style={styles.title}>Colección Centroamérica</Text>
       <ScrollView>
         <View >
-        <View style={styles.grid}>
+          <View style={styles.grid}>
             {years.map((year, index) => (
               <Link key={index} href={{ pathname: "/central-america/covers/covers", params: { year: year.year_edit, country: country} }} asChild>
                 <Pressable style={styles.card}>
@@ -43,6 +43,9 @@ export default function CentralAmericaScreen() {
                   <Text style={styles.text}>Especiales</Text>
                 </Pressable>
               </Link> */}
+          </View>
+          <View style={styles.note}>
+            <Text>NOTA: Desde 1992 hasta 1999, la colección de Centroamérica tuvo distribución compartida con Venezuela (o en su defecto Colombia).</Text>
           </View>
         </View>
       </ScrollView>
@@ -87,7 +90,11 @@ const styles = StyleSheet.create({
     color: "#fff",
     fontWeight: "bold",
   },
-    footer: {
+  note: {
+    maxWidth: 300,
+    marginTop: 20,
+  },
+  footer: {
     padding: 20,
     alignItems: "center",
     borderTopWidth: 1,

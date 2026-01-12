@@ -21,7 +21,7 @@ export default function ArgentinaScreen() {
       <Text style={styles.title}>Colección Argentina</Text>
       <ScrollView>
         <View >
-        <View style={styles.grid}>
+          <View style={styles.grid}>
             {years.map((year, index) => (
               <Link key={index} href={{ pathname: "/argentina/covers/covers", params: { year: year.year_edit, country: country} }} asChild>
                 <Pressable style={styles.card}>
@@ -35,6 +35,9 @@ export default function ArgentinaScreen() {
                   <Text style={styles.text}>Especiales</Text>
                 </Pressable>
               </Link>
+          </View>
+          <View style={styles.note}>
+            <Text>NOTA: A partir del año 2000, la colección de Argentina tuvo distribución importada de las ediciones de otras zonas (México, Chile y Centroamérica).</Text>
           </View>
         </View>
       </ScrollView>
@@ -79,7 +82,11 @@ const styles = StyleSheet.create({
     color: "#3c3c3c",
     fontWeight: "bold",
   },
-    footer: {
+  note: {
+    maxWidth: 300,
+    marginTop: 20,
+  },
+  footer: {
     padding: 20,
     alignItems: "center",
     borderTopWidth: 1,

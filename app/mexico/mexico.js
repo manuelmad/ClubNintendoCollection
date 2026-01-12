@@ -40,7 +40,7 @@ export default function MexicoScreen() {
       <Text style={styles.title}>Colección Mexico</Text>
       <ScrollView>
         <View >
-        <View style={styles.grid}>
+          <View style={styles.grid}>
             {years.map((year, index) => (
               <Link key={index} href={{ pathname: "/mexico/covers/covers", params: { year: year.year_edit, country: country} }} asChild>
                 <Pressable style={styles.card}>
@@ -54,6 +54,9 @@ export default function MexicoScreen() {
                   <Text style={styles.text}>Especiales</Text>
                 </Pressable>
               </Link>
+          </View>
+          <View style={styles.note}>
+            <Text>NOTA: A partir de octubre del 2015, la colección de México solo tuvo distribución en formato digital.</Text>
           </View>
         </View>
       </ScrollView>
@@ -98,7 +101,11 @@ const styles = StyleSheet.create({
     color: "#fff",
     fontWeight: "bold",
   },
-    footer: {
+  note: {
+    maxWidth: 300,
+    marginTop: 20,
+  },
+  footer: {
     padding: 20,
     alignItems: "center",
     borderTopWidth: 1,
