@@ -14,11 +14,15 @@ const flags = [
 export default function Index() {
   return (
     <View  style={styles.container}>
-      <Image style={styles.backgroundImage} source={require("@/assets/images/background.png")}></Image>
-      <View style={styles.titleContainer}>
+      {/* <View style={styles.titleContainer}> */}
+        <Image style={styles.titleLogo} source={require("@/assets/images/titleLogo.png")}></Image>
+      {/* </View> */}
+      
+      {/* <Image style={styles.backgroundImage} source={require("@/assets/images/background.png")}></Image> */}
+      {/* <View style={styles.titleContainer}>
         <Image style={styles.Mis} source={require("@/assets/images/Mis.png")}></Image>
         <Image style={styles.Colecciones} source={require("@/assets/images/Colecciones.png")}></Image>
-      </View>
+      </View> */}
 
       {/* <Text style={styles.title}>Mis Colecciones</Text> */}
       <View style={styles.grid}>
@@ -43,39 +47,34 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
+    backgroundColor: "#ffffff",
   },
-  backgroundImage: {
+  titleLogo: {
     position: "absolute",
-    top: -50,
-    left: 0,
-    width: "100%",
-    height: "100%",
-    resizeMode: "cover",
-    opacity: 0.5,
-  },
-  titleContainer: {
-    position: "absolute",
-    top: 60,
-    width: "100%",
-    // height: 50,
-    flexDirection: "column",
-    justifyContent: "space-between",
-    alignItems: "center",
-  },
-  Mis: {
-    // position: "absolute",
-    // top: 50,
-    // left: 80,
-    width: "25%",
+    top: -70,
+    // left: 0,
+    width: "50%",
+    height: "50%",
     resizeMode: "contain",
   },
-  Colecciones: {
-    // position: "absolute",
-    // top: 100,
-    // left: 20,
-    width: "80%",
-    resizeMode: "contain",
-  },
+  // titleContainer: {
+  //   position: "absolute",
+  //   top: 0,
+  //   width: "80%",
+  //   flexDirection: "column",
+  //   justifyContent: "space-between",
+  //   alignItems: "center",
+  // },
+  // Mis: {
+
+  //   width: "25%",
+  //   resizeMode: "contain",
+  // },
+  // Colecciones: {
+
+  //   width: "80%",
+  //   resizeMode: "contain",
+  // },
   // title: {
   //   fontSize: 30,
   //   color: "#fff",
@@ -95,27 +94,31 @@ const styles = StyleSheet.create({
     height: 80,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#f5f5f5",
+    //backgroundColor: "#f5f5f5",
+    //backgroundColor: "#0460cf",
     borderRadius: 10,
   },
   image: {
-    width: "90%",
-    height: "90%",
+    width: "95%",
+    height: "95%",
+    borderRadius: 10,
+    borderColor: "#000000",
+    borderWidth: 2,
   },
   credits: {
-    color: "#fff",
+    color: "#rgb(164, 163, 163)",
     marginTop: 40,
     fontSize: 16,
     textAlign: "center",
   },
     developer: {
-    color: "#5c5b5bff",
+    color: "#0460cf",
     fontSize: 20,
     textAlign: "center",
     fontWeight: "bold",
   },
     group: {
-    color: "#fff",
+    color: "#rgb(164, 163, 163)",
     fontSize: 16,
     textAlign: "center",
   }
