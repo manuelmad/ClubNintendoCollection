@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function VenezuelaScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Colección Centro América</Text>
+      <Text style={styles.text}>Colección Centroamérica</Text>
       <Text style={styles.text}>(Próximamente)</Text>
       <Link style={styles.link} href="/">Volver al Inicio</Link>
     </View>
