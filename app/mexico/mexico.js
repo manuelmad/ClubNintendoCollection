@@ -56,7 +56,7 @@ export default function MexicoScreen() {
               </Link>
           </View>
           <View style={styles.note}>
-            <Text>NOTA: A partir de octubre del 2015, la colección de México solo tuvo distribución en formato digital.</Text>
+            <Text style={styles.noteText}>NOTA: A partir de octubre del 2015, la colección de México solo tuvo distribución en formato digital.</Text>
           </View>
         </View>
       </ScrollView>
@@ -72,13 +72,14 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#fff",
+    backgroundColor: "#181c23",
   },
   title: {
     textAlign: "center",
     fontSize: 24,
     fontWeight: "bold",
     marginBottom: 30,
+    color: "#478d01"
     // position: "fixed",
     // top: 0,
   },
@@ -94,22 +95,29 @@ const styles = StyleSheet.create({
     height: 80,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#006845",
+    backgroundColor: "#292e38",
     borderRadius: 10,
+    borderWidth: 2,
+    borderColor: "#478d01"
   },
   text: {
     color: "#fff",
     fontWeight: "bold",
+    fontSize: 20,
   },
   note: {
     maxWidth: 300,
     marginTop: 20,
+  },
+  noteText: {
+    color: "#bab8b8",
   },
   footer: {
     padding: 20,
     alignItems: "center",
     borderTopWidth: 1,
     borderTopColor: "#eee",
+    marginTop: 20,
   },
   link: {
     color: "#007AFF",

@@ -37,7 +37,7 @@ export default function ArgentinaScreen() {
               </Link>
           </View>
           <View style={styles.note}>
-            <Text>NOTA: A partir del año 2000, la colección de Argentina tuvo distribución importada de las ediciones de otras zonas (México, Chile y Centroamérica).</Text>
+            <Text style={styles.noteText}>NOTA: A partir del año 2000, la colección de Argentina tuvo distribución importada de las ediciones de otras zonas (México, Chile y Centroamérica).</Text>
           </View>
         </View>
       </ScrollView>
@@ -53,13 +53,14 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#fff",
+    backgroundColor: "#181c23",
   },
   title: {
     textAlign: "center",
     fontSize: 24,
     fontWeight: "bold",
     marginBottom: 30,
+    color: "#2e6e70"
     // position: "fixed",
     // top: 0,
   },
@@ -75,22 +76,29 @@ const styles = StyleSheet.create({
     height: 80,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#51d1f6",
+    backgroundColor: "#292e38",
     borderRadius: 10,
+    borderWidth: 2,
+    borderColor: "#2e6e70"
   },
   text: {
-    color: "#3c3c3c",
+    color: "#fff",
     fontWeight: "bold",
+    fontSize: 20,
   },
   note: {
     maxWidth: 300,
     marginTop: 20,
+  },
+  noteText: {
+    color: "#bab8b8",
   },
   footer: {
     padding: 20,
     alignItems: "center",
     borderTopWidth: 1,
     borderTopColor: "#eee",
+    marginTop: 20,
   },
   link: {
     color: "#007AFF",

@@ -70,13 +70,14 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#fff",
+    backgroundColor: "#181c23",
   },
   title: {
     textAlign: "center",
     fontSize: 24,
     fontWeight: "bold",
     marginBottom: 30,
+    color: "#cf2e2e"
     // position: "fixed",
     // top: 0,
   },
@@ -92,18 +93,22 @@ const styles = StyleSheet.create({
     height: 80,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#fe0000",
+    backgroundColor: "#292e38",
     borderRadius: 10,
+    borderWidth: 2,
+    borderColor: "#cf2e2e"
   },
   text: {
     color: "#fff",
     fontWeight: "bold",
+    fontSize: 20,
   },
     footer: {
     padding: 20,
     alignItems: "center",
     borderTopWidth: 1,
     borderTopColor: "#eee",
+    marginTop: 20,
   },
   link: {
     color: "#007AFF",

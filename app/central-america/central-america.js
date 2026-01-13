@@ -45,7 +45,7 @@ export default function CentralAmericaScreen() {
               </Link> */}
           </View>
           <View style={styles.note}>
-            <Text>NOTA: Desde 1992 hasta 1999, la colección de Centroamérica tuvo distribución compartida con Venezuela (o en su defecto Colombia).</Text>
+            <Text style={styles.noteText}>NOTA: Desde 1992 hasta 1999, la colección de Centroamérica tuvo distribución compartida con Venezuela (o en su defecto Colombia).</Text>
           </View>
         </View>
       </ScrollView>
@@ -61,13 +61,14 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#fff",
+    backgroundColor: "#181c23",
   },
   title: {
     textAlign: "center",
     fontSize: 24,
     fontWeight: "bold",
     marginBottom: 30,
+    color: "#2a00fec9"
     // position: "fixed",
     // top: 0,
   },
@@ -83,22 +84,29 @@ const styles = StyleSheet.create({
     height: 80,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#2a00fec9",
+    backgroundColor: "#292e38",
     borderRadius: 10,
+    borderWidth: 2,
+    borderColor: "#2a00fec9"
   },
   text: {
     color: "#fff",
     fontWeight: "bold",
+    fontSize: 20,
   },
   note: {
     maxWidth: 300,
     marginTop: 20,
+  },
+  noteText: {
+    color: "#bab8b8",
   },
   footer: {
     padding: 20,
     alignItems: "center",
     borderTopWidth: 1,
     borderTopColor: "#eee",
+    marginTop: 20,
   },
   link: {
     color: "#007AFF",

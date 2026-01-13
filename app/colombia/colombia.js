@@ -37,7 +37,7 @@ export default function ColombiaScreen() {
               </Link>
           </View>
           <View style={styles.note}>
-            <Text>NOTA: A partir del año 2000, la colección de Colombia tuvo distribución importada de las ediciones de otras zonas (México, Chile y Centroamérica).</Text>
+            <Text style={styles.noteText}>NOTA: A partir del año 2000, la colección de Colombia tuvo distribución importada de las ediciones de otras zonas (México, Chile y Centroamérica).</Text>
           </View>
         </View>
       </ScrollView>
@@ -53,13 +53,14 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#fff",
+    backgroundColor: "#181c23",
   },
   title: {
     textAlign: "center",
     fontSize: 24,
     fontWeight: "bold",
     marginBottom: 30,
+    color: "#9a9a03"
     // position: "fixed",
     // top: 0,
   },
@@ -75,22 +76,29 @@ const styles = StyleSheet.create({
     height: 80,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#e4be01",
+    backgroundColor: "#292e38",
     borderRadius: 10,
+    borderWidth: 2,
+    borderColor: "#9a9a03"
   },
   text: {
-    color: "#3c3c3c",
+    color: "#fff",
     fontWeight: "bold",
+    fontSize: 20,
   },
   note: {
     maxWidth: 300,
     marginTop: 20,
+  },
+    noteText: {
+    color: "#bab8b8",
   },
   footer: {
     padding: 20,
     alignItems: "center",
     borderTopWidth: 1,
     borderTopColor: "#eee",
+    marginTop: 20,
   },
   link: {
     color: "#007AFF",
