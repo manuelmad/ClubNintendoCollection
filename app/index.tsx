@@ -3,12 +3,12 @@ import { Image, Pressable, StyleSheet, Text, View } from "react-native";
 
 // Asegúrate de que los nombres de archivo coincidan con los que tienes en assets/images/flags
 const flags = [
-  { image: require("@/assets/images/flags/mexico.png"), route: "/mexico/mexico" },
-  { image: require("@/assets/images/flags/venezuela.webp"), route: "/venezuela/venezuela" },
-  { image: require("@/assets/images/flags/colombia.webp"), route: "/colombia/colombia" },
-  { image: require("@/assets/images/flags/chile.png"), route: "/chile/chile" },
-  { image: require("@/assets/images/flags/argentina.png"), route: "/argentina/argentina" },
-  { image: require("@/assets/images/flags/central-america-map.png"), route: "/central-america/central-america" },
+  { image: require("@/assets/images/flags/mexico.png"), route: "/mexico/mexico", name: "México" },
+  { image: require("@/assets/images/flags/venezuela.webp"), route: "/venezuela/venezuela", name: "Venezuela" },
+  { image: require("@/assets/images/flags/colombia.webp"), route: "/colombia/colombia", name: "Colombia" },
+  { image: require("@/assets/images/flags/chile.png"), route: "/chile/chile", name: "Chile" },
+  { image: require("@/assets/images/flags/argentina.png"), route: "/argentina/argentina", name: "Argentina" },
+  { image: require("@/assets/images/flags/central-america-map.png"), route: "/central-america/central-america", name: "Centroamérica" },
 ];
 
 export default function Index() {
@@ -27,11 +27,15 @@ export default function Index() {
       {/* <Text style={styles.title}>Mis Colecciones</Text> */}
       <View style={styles.grid}>
         {flags.map((flag, index) => (
+
           <Link key={index} href={flag.route} asChild>
             <Pressable style={styles.card}>
               <Image source={flag.image} style={styles.image} resizeMode="contain" />
+              <Text style={styles.flagName}>{flag.name}</Text>
             </Pressable>
+            
           </Link>
+
         ))}
       </View>
       <Text style={styles.credits}>Diseño y Desarrollo por:</Text>
@@ -47,7 +51,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#ffffff",
+    backgroundColor: "#181c23",
   },
   titleLogo: {
     position: "absolute",
@@ -91,19 +95,23 @@ const styles = StyleSheet.create({
   },
   card: {
     width: 120,
-    height: 80,
+    height: 90,
     justifyContent: "center",
     alignItems: "center",
     //backgroundColor: "#f5f5f5",
-    //backgroundColor: "#0460cf",
+    backgroundColor: "#292e38",
     borderRadius: 10,
   },
   image: {
-    width: "95%",
-    height: "95%",
+    width: "60%",
+    height: "60%",
     borderRadius: 10,
-    borderColor: "#000000",
-    borderWidth: 2,
+    // borderColor: "#000000",
+    // borderWidth: 2,
+  },
+  flagName: {
+    color: "#rgb(164, 163, 163)",
+    padding: 4,
   },
   credits: {
     color: "#rgb(164, 163, 163)",
