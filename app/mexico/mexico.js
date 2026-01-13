@@ -79,7 +79,10 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: "bold",
     marginBottom: 30,
-    color: "#478d01"
+    color: "#fff",
+    backgroundColor: "#478d01",
+    borderRadius: 5,
+    padding: 8,
     // position: "fixed",
     // top: 0,
   },

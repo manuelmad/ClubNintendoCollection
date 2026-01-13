@@ -161,9 +161,12 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   title: {
-    fontSize: 22,
+    fontSize: 20,
     fontWeight: "bold",
-    color: "#2a00fec9"
+    color: "#fff",
+    backgroundColor: "#2a00fec9",
+    borderRadius: 5,
+    padding: 8,
   },
   grid: {
     paddingHorizontal: 10,

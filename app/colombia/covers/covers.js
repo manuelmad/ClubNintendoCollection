@@ -171,7 +171,10 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 22,
     fontWeight: "bold",
-    color: "#9a9a03"
+    color: "#fff",
+    backgroundColor: "#9a9a03",
+    borderRadius: 5,
+    padding: 8,
   },
   grid: {
     paddingHorizontal: 10,

@@ -60,7 +60,10 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: "bold",
     marginBottom: 30,
-    color: "#9a9a03"
+    color: "#fff",
+    backgroundColor: "#9a9a03",
+    borderRadius: 5,
+    padding: 8,
     // position: "fixed",
     // top: 0,
   },
