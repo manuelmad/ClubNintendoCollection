@@ -48,7 +48,7 @@ export default function CoversScreen() {
     }
 
     return (
-      <View style={[styles.card, item["OWNED"] === "NO" ? {backgroundColor: "#f3e1e3"} : { backgroundColor: "#c6eadf" }]}>
+      <View style={[styles.card, item["OWNED"] === "NO" ? {borderColor: "#f0394d"} : { borderColor: "#006845" }]}>
         {imageSource ? (
           <Image source={imageSource} style={styles.image} resizeMode="contain" />
         ) : (
@@ -154,7 +154,7 @@ export default function CoversScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: "#181c23",
   },
   header: {
     padding: 20,
@@ -163,6 +163,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 22,
     fontWeight: "bold",
+    color: "#2a00fec9"
   },
   grid: {
     paddingHorizontal: 10,
@@ -176,8 +177,8 @@ const styles = StyleSheet.create({
     width: 160,
     height: 370,
     alignItems: "center",
-    // borderWidth: 1,
-    // backgroundColor: "#f9f9f9",
+     borderWidth: 2,
+    backgroundColor: "#292e38",
     borderRadius: 10,
     padding: 10,
     // elevation: 2, // Sombra en Android
@@ -190,8 +191,8 @@ const styles = StyleSheet.create({
     width: 160,
     height: 350,
     alignItems: "center",
-    // borderWidth: 1,
-    // backgroundColor: "#f9f9f9",
+     borderWidth: 2,
+    backgroundColor: "#292e38",
     borderRadius: 10,
     padding: 10,
     // elevation: 2, // Sombra en Android
@@ -217,6 +218,7 @@ const styles = StyleSheet.create({
     fontSize: 12,
     textAlign: "center",
     fontWeight: "600",
+    color: "#rgb(164, 163, 163)",
   },
   footer: {
     padding: 20,
