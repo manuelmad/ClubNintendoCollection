@@ -2532,7 +2532,20 @@ const inventory = [
         "OBSERVATION": "-",
         "COUNTRY": "VENEZUELA"
     },
-      {
+     {
+        "YEAR EDIT": 19,
+        "YEAR DATE": 2010,
+        "MONTH": "ENERO",
+        "YEAR NUMBER": 1,
+        "OVERALL NUMBER": 208,
+        "COVER": "ZELDA - TREN",
+        "OWNED": "NO",
+        "POSTER": "-",
+        "POSTER THEME": "-",
+        "OBSERVATION": "-",
+        "COUNTRY": "VENEZUELA"
+    },
+    {
         "YEAR EDIT": 19,
         "YEAR DATE": 2010,
         "MONTH": "FEBRERO",

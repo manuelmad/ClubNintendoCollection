@@ -60,8 +60,8 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: "bold",
     marginBottom: 30,
-    color: "#fff",
-    backgroundColor: "#9a9a03",
+    color: "#181c23",
+    backgroundColor: "#FBFA03",
     borderRadius: 5,
     padding: 8,
     // position: "fixed",
@@ -82,7 +82,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#292e38",
     borderRadius: 10,
     borderWidth: 2,
-    borderColor: "#9a9a03"
+    borderColor: "#FBFA03"
   },
   text: {
     color: "#fff",

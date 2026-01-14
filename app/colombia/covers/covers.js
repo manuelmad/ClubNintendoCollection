@@ -171,8 +171,8 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 22,
     fontWeight: "bold",
-    color: "#fff",
-    backgroundColor: "#9a9a03",
+    color: "#181c23",
+    backgroundColor: "#FBFA03",
     borderRadius: 5,
     padding: 8,
   },
