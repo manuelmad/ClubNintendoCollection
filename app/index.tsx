@@ -14,17 +14,8 @@ const flags = [
 export default function Index() {
   return (
     <View  style={styles.container}>
-      {/* <View style={styles.titleContainer}> */}
-        <Image style={styles.titleLogo} source={require("@/assets/images/titleLogo.png")}></Image>
-      {/* </View> */}
-      
-      {/* <Image style={styles.backgroundImage} source={require("@/assets/images/background.png")}></Image> */}
-      {/* <View style={styles.titleContainer}>
-        <Image style={styles.Mis} source={require("@/assets/images/Mis.png")}></Image>
-        <Image style={styles.Colecciones} source={require("@/assets/images/Colecciones.png")}></Image>
-      </View> */}
+      <Image style={styles.titleLogo} source={require("@/assets/images/titleLogo.png")}></Image>
 
-      {/* <Text style={styles.title}>Mis Colecciones</Text> */}
       <View style={styles.grid}>
         {flags.map((flag, index) => (
 
@@ -55,36 +46,11 @@ const styles = StyleSheet.create({
   },
   titleLogo: {
     position: "absolute",
-    top: -70,
-    // left: 0,
+    top: -90,
     width: "50%",
     height: "50%",
     resizeMode: "contain",
   },
-  // titleContainer: {
-  //   position: "absolute",
-  //   top: 0,
-  //   width: "80%",
-  //   flexDirection: "column",
-  //   justifyContent: "space-between",
-  //   alignItems: "center",
-  // },
-  // Mis: {
-
-  //   width: "25%",
-  //   resizeMode: "contain",
-  // },
-  // Colecciones: {
-
-  //   width: "80%",
-  //   resizeMode: "contain",
-  // },
-  // title: {
-  //   fontSize: 30,
-  //   color: "#fff",
-  //   fontWeight: "bold",
-  //   marginBottom: 30,
-  // },
   grid: {
     flexDirection: "row",
     flexWrap: "wrap",
@@ -98,7 +64,6 @@ const styles = StyleSheet.create({
     height: 90,
     justifyContent: "center",
     alignItems: "center",
-    //backgroundColor: "#f5f5f5",
     backgroundColor: "#292e38",
     borderRadius: 10,
   },
@@ -106,8 +71,6 @@ const styles = StyleSheet.create({
     width: "60%",
     height: "60%",
     borderRadius: 10,
-    // borderColor: "#000000",
-    // borderWidth: 2,
   },
   flagName: {
     color: "#rgb(164, 163, 163)",
@@ -116,18 +79,18 @@ const styles = StyleSheet.create({
   credits: {
     color: "#rgb(164, 163, 163)",
     marginTop: 40,
-    fontSize: 16,
+    fontSize: 12,
     textAlign: "center",
   },
     developer: {
     color: "#0460cf",
-    fontSize: 20,
+    fontSize: 14,
     textAlign: "center",
     fontWeight: "bold",
   },
     group: {
     color: "#rgb(164, 163, 163)",
-    fontSize: 16,
+    fontSize: 12,
     textAlign: "center",
   }
 });
