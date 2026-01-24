@@ -3,30 +3,58 @@ import { Image, Pressable, StyleSheet, Text, View } from "react-native";
 
 // Asegúrate de que los nombres de archivo coincidan con los que tienes en assets/images/flags
 const flags = [
-  { image: require("@/assets/images/flags/mexico.png"), route: "/mexico/mexico", name: "México" },
-  { image: require("@/assets/images/flags/venezuela.webp"), route: "/venezuela/venezuela", name: "Venezuela" },
-  { image: require("@/assets/images/flags/colombia.webp"), route: "/colombia/colombia", name: "Colombia" },
-  { image: require("@/assets/images/flags/chile.png"), route: "/chile/chile", name: "Chile" },
-  { image: require("@/assets/images/flags/argentina.png"), route: "/argentina/argentina", name: "Argentina" },
-  { image: require("@/assets/images/flags/central-america-map.png"), route: "/central-america/central-america", name: "Centroamérica" },
+  {
+    image: require("@/assets/images/flags/mexico.png"),
+    route: "/mexico/mexico",
+    name: "México",
+  },
+  {
+    image: require("@/assets/images/flags/venezuela.webp"),
+    route: "/venezuela/venezuela",
+    name: "Venezuela",
+  },
+  {
+    image: require("@/assets/images/flags/colombia.webp"),
+    route: "/colombia/colombia",
+    name: "Colombia",
+  },
+  {
+    image: require("@/assets/images/flags/chile.png"),
+    route: "/chile/chile",
+    name: "Chile",
+  },
+  {
+    image: require("@/assets/images/flags/argentina.png"),
+    route: "/argentina/argentina",
+    name: "Argentina",
+  },
+  {
+    image: require("@/assets/images/flags/central-america-map.png"),
+    route: "/central-america/central-america",
+    name: "Centroamérica",
+  },
 ];
 
 export default function Index() {
   return (
-    <View  style={styles.container}>
-      <Image style={styles.titleLogo} source={require("@/assets/images/titleLogo.png")}></Image>
+    <View style={styles.container}>
+      <Image
+        style={styles.titleLogo}
+        source={require("@/assets/images/titleLogo.png")}
+      ></Image>
 
       <View style={styles.grid}>
         {flags.map((flag, index) => (
-
           <Link key={index} href={flag.route} asChild>
             <Pressable style={styles.card}>
-              <Image source={flag.image} style={styles.image} resizeMode="contain" />
+              <Image
+                source={flag.image}
+                style={styles.image}
+                resizeMode="contain"
+              />
               <Text style={styles.flagName}>{flag.name}</Text>
             </Pressable>
-            
           </Link>
-
         ))}
       </View>
       <Text style={styles.credits}>Diseño y Desarrollo por:</Text>
@@ -64,8 +92,10 @@ const styles = StyleSheet.create({
     height: 90,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#292e38",
+    // backgroundColor: "#292e38",
     borderRadius: 10,
+    borderWidth: 3,
+    borderColor: "#292e38",
   },
   image: {
     width: "60%",
@@ -82,15 +112,15 @@ const styles = StyleSheet.create({
     fontSize: 12,
     textAlign: "center",
   },
-    developer: {
+  developer: {
     color: "#0460cf",
     fontSize: 14,
     textAlign: "center",
     fontWeight: "bold",
   },
-    group: {
+  group: {
     color: "#rgb(164, 163, 163)",
     fontSize: 12,
     textAlign: "center",
-  }
+  },
 });
