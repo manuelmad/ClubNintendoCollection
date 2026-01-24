@@ -85,7 +85,7 @@ const inventory = [
         "POSTER": "MISSING: PAGES 23-26",
         "POSTER THEME": "STREET FIGHTER II / EXTRA: CUBITIPS SUPER MARIO WORLD",
         "OBSERVATION": "FALTA CONTRAPORTADA",
-        "COUNTRY": "COLOMBIA"
+        "COUNTRY": "VENEZUELA"
     },
     {
         "YEAR EDIT": 2,
@@ -111,7 +111,7 @@ const inventory = [
         "POSTER": "MISSING: PAGES 31-34",
         "POSTER THEME": "CONTRA / SUPER MARIO KART",
         "OBSERVATION": "-",
-        "COUNTRY": "COLOMBIA"
+        "COUNTRY": "VENEZUELA"
     },
     {
         "YEAR EDIT": 2,
@@ -124,7 +124,7 @@ const inventory = [
         "POSTER": "MISSING: PAGES 31-34",
         "POSTER THEME": "TMNT TURTLES IN TIME",
         "OBSERVATION": "-",
-        "COUNTRY": "COLOMBIA"
+        "COUNTRY": "VENEZUELA"
     },
     {
         "YEAR EDIT": 2,
@@ -137,7 +137,7 @@ const inventory = [
         "POSTER": "INCLUDED: PAGES 27-30",
         "POSTER THEME": "ADVENTURE ISLAND 3",
         "OBSERVATION": "-",
-        "COUNTRY": "COLOMBIA"
+        "COUNTRY": "VENEZUELA"
     },
     {
         "YEAR EDIT": 2,
@@ -189,7 +189,7 @@ const inventory = [
         "POSTER": "MISSING: PAGES 25-32",
         "POSTER THEME": "CALENDARIO 1994 / STARFOX",
         "OBSERVATION": "LOMO DAÑADO - PÁGINA CENTRAL SUELTA",
-        "COUNTRY": "COLOMBIA"
+        "COUNTRY": "VENEZUELA"
     },
     {
         "YEAR EDIT": 3,
@@ -252,7 +252,7 @@ const inventory = [
         "POSTER": "-",
         "POSTER THEME": "-",
         "OBSERVATION": "-",
-        "COUNTRY": "COLOMBIA"
+        "COUNTRY": "VENEZUELA"
     },
     {
         "YEAR EDIT": 3,
@@ -278,7 +278,7 @@ const inventory = [
         "POSTER": "-",
         "POSTER THEME": "-",
         "OBSERVATION": "-",
-        "COUNTRY": "COLOMBIA"
+        "COUNTRY": "VENEZUELA"
     },
     {
         "YEAR EDIT": 3,
@@ -291,7 +291,7 @@ const inventory = [
         "POSTER": "MISSING: PAGES 27-30",
         "POSTER THEME": "STREET FIGHTER II TURBO / KING OF DRAGONS",
         "OBSERVATION": "-",
-        "COUNTRY": "COLOMBIA"
+        "COUNTRY": "VENEZUELA"
     },
     {
         "YEAR EDIT": 3,
@@ -314,7 +314,7 @@ const inventory = [
         "POSTER": "MISSING: PAGES 27-34",
         "POSTER THEME": "ALIEN VS. PREDATOR - STUNT RACE FX - ITCHY & SCRATCHY",
         "OBSERVATION": "-",
-        "COUNTRY": "COLOMBIA"
+        "COUNTRY": "VENEZUELA"
     },
     {
         "YEAR EDIT": 3,
@@ -368,7 +368,7 @@ const inventory = [
         "POSTER": "MISSING: PAGES 27-34",
         "POSTER THEME": "AERO THE ACRO-BAT 2 / X-MEN MUTAN APOCALYPSE",
         "OBSERVATION": "-",
-        "COUNTRY": "COLOMBIA"
+        "COUNTRY": "VENEZUELA"
     },
     {
         "YEAR EDIT": 4,
@@ -411,7 +411,7 @@ const inventory = [
         "POSTER": "-",
         "POSTER THEME": "-",
         "OBSERVATION": "-",
-        "COUNTRY": "COLOMBIA"
+        "COUNTRY": "VENEZUELA"
     },
     {
         "YEAR EDIT": 4,
@@ -434,7 +434,7 @@ const inventory = [
         "POSTER": "-",
         "POSTER THEME": "-",
         "OBSERVATION": "-",
-        "COUNTRY": "COLOMBIA"
+        "COUNTRY": "VENEZUELA"
     },
     {
         "YEAR EDIT": 4,
@@ -492,7 +492,7 @@ const inventory = [
         "POSTER": "-",
         "POSTER THEME": "-",
         "OBSERVATION": "-",
-        "COUNTRY": "COLOMBIA"
+        "COUNTRY": "VENEZUELA"
     },
     {
         "YEAR EDIT": 5,
@@ -544,7 +544,7 @@ const inventory = [
         "POSTER": "-",
         "POSTER THEME": "-",
         "OBSERVATION": "LOMO UN POCO DAÑADO",
-        "COUNTRY": "COLOMBIA"
+        "COUNTRY": "VENEZUELA"
     },
     {
         "YEAR EDIT": 5,
@@ -567,7 +567,7 @@ const inventory = [
         "POSTER": "-",
         "POSTER THEME": "-",
         "OBSERVATION": "-",
-        "COUNTRY": "COLOMBIA"
+        "COUNTRY": "VENEZUELA"
     },
     {
         "YEAR EDIT": 5,
@@ -580,7 +580,7 @@ const inventory = [
         "POSTER": "-",
         "POSTER THEME": "-",
         "OBSERVATION": "LOMO UN POCO DAÑADO",
-        "COUNTRY": "COLOMBIA"
+        "COUNTRY": "VENEZUELA"
     },
     {
         "YEAR EDIT": 5,
@@ -614,7 +614,7 @@ const inventory = [
         "POSTER": "-",
         "POSTER THEME": "-",
         "OBSERVATION": "-",
-        "COUNTRY": "COLOMBIA"
+        "COUNTRY": "VENEZUELA"
     },
     {
         "YEAR EDIT": 6,
@@ -627,7 +627,7 @@ const inventory = [
         "POSTER": "-",
         "POSTER THEME": "-",
         "OBSERVATION": "-",
-        "COUNTRY": "COLOMBIA"
+        "COUNTRY": "VENEZUELA"
     },
     {
         "YEAR EDIT": 6,
@@ -661,7 +661,7 @@ const inventory = [
         "POSTER": "MISSING: PAGES 29-36",
         "POSTER THEME": "PILOTWINGS 64 / ULTIMATE MK3 - MK TRILOGY",
         "OBSERVATION": "-",
-        "COUNTRY": "COLOMBIA"
+        "COUNTRY": "VENEZUELA"
     },
     {
         "YEAR EDIT": 6,
@@ -684,7 +684,7 @@ const inventory = [
         "POSTER": "MISSING: PAGES 29-36",
         "POSTER THEME": "STREET FIGHTER ALPHA 2 / KIRBY STAR STACKER",
         "OBSERVATION": "-",
-        "COUNTRY": "COLOMBIA"
+        "COUNTRY": "VENEZUELA"
     },
     {
         "YEAR EDIT": 6,
@@ -697,7 +697,7 @@ const inventory = [
         "POSTER": "-",
         "POSTER THEME": "-",
         "OBSERVATION": "PÁGINA CENTRAL SUELTA",
-        "COUNTRY": "COLOMBIA"
+        "COUNTRY": "VENEZUELA"
     },
     {
         "YEAR EDIT": 6,
@@ -710,7 +710,7 @@ const inventory = [
         "POSTER": "-",
         "POSTER THEME": "-",
         "OBSERVATION": "-",
-        "COUNTRY": "COLOMBIA"
+        "COUNTRY": "VENEZUELA"
     },
     {
         "YEAR EDIT": 6,
@@ -723,7 +723,7 @@ const inventory = [
         "POSTER": "-",
         "POSTER THEME": "-",
         "OBSERVATION": "-",
-        "COUNTRY": "COLOMBIA"
+        "COUNTRY": "VENEZUELA"
     },
     {
         "YEAR EDIT": 6,
@@ -748,7 +748,7 @@ const inventory = [
         "POSTER": "-",
         "POSTER THEME": "-",
         "OBSERVATION": "-",
-        "COUNTRY": "COLOMBIA"
+        "COUNTRY": "VENEZUELA"
     },
     {
         "YEAR EDIT": 6,
@@ -761,7 +761,7 @@ const inventory = [
         "POSTER": "MISSING: PAGES 29-36",
         "POSTER THEME": "GOLDENEYE 007 / MARIO KART 64",
         "OBSERVATION": "CONTRAPORTADA PRESENTA TROZO TRIANGULAR CORTADO",
-        "COUNTRY": "COLOMBIA"
+        "COUNTRY": "VENEZUELA"
     },
     {
         "YEAR EDIT": 7,
@@ -774,7 +774,7 @@ const inventory = [
         "POSTER": "-",
         "POSTER THEME": "-",
         "OBSERVATION": "-",
-        "COUNTRY": "COLOMBIA"
+        "COUNTRY": "VENEZUELA"
     },
     {
         "YEAR EDIT": 7,
@@ -787,7 +787,7 @@ const inventory = [
         "POSTER": "-",
         "POSTER THEME": "-",
         "OBSERVATION": "-",
-        "COUNTRY": "COLOMBIA"
+        "COUNTRY": "VENEZUELA"
     },
     {
         "YEAR EDIT": 7,
@@ -800,7 +800,7 @@ const inventory = [
         "POSTER": "-",
         "POSTER THEME": "-",
         "OBSERVATION": "-",
-        "COUNTRY": "COLOMBIA"
+        "COUNTRY": "VENEZUELA"
     },
     {
         "YEAR EDIT": 7,
@@ -868,7 +868,7 @@ const inventory = [
         "POSTER": "-",
         "POSTER THEME": "-",
         "OBSERVATION": "-",
-        "COUNTRY": "COLOMBIA"
+        "COUNTRY": "VENEZUELA"
     },
     {
         "YEAR EDIT": 7,
@@ -911,7 +911,7 @@ const inventory = [
         "POSTER": "MISSING: PAGES 31-34",
         "POSTER THEME": "THE LEGEND OF ZELDA: OCARINA OF TIME",
         "OBSERVATION": "-",
-        "COUNTRY": "COLOMBIA"
+        "COUNTRY": "VENEZUELA"
     },
     {
         "YEAR EDIT": 8,
@@ -973,7 +973,7 @@ const inventory = [
         "POSTER": "-",
         "POSTER THEME": "-",
         "OBSERVATION": "-",
-        "COUNTRY": "COLOMBIA"
+        "COUNTRY": "VENEZUELA"
     },
     {
         "YEAR EDIT": 8,
@@ -986,7 +986,7 @@ const inventory = [
         "POSTER": "-",
         "POSTER THEME": "-",
         "OBSERVATION": "-",
-        "COUNTRY": "COLOMBIA"
+        "COUNTRY": "VENEZUELA"
     },
     {
         "YEAR EDIT": 8,
@@ -1012,7 +1012,7 @@ const inventory = [
         "POSTER": "INCLUDED: PAGES 31-34",
         "POSTER THEME": "SHADOW MAN",
         "OBSERVATION": "-",
-        "COUNTRY": "COLOMBIA"
+        "COUNTRY": "VENEZUELA"
     },
     {
         "YEAR EDIT": 8,
