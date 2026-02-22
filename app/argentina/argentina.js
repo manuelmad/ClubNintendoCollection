@@ -1,6 +1,7 @@
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import { useFocusEffect } from "@react-navigation/native";
 import { Link } from "expo-router";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { inventory } from "./inventory";
@@ -21,17 +22,24 @@ const country = "Argentina";
 export default function ArgentinaScreen() {
   const [data, setData] = useState(inventory);
 
-  useEffect(() => {
-    const loadData = async () => {
-      // Esta línea la uso para limpiar la base de datos almacenada en AsyncStorage durante las pruebas
-      //await AsyncStorage.removeItem('argentinaDB')
-      const storedDb = await AsyncStorage.getItem("argentinaDB");
-      if (storedDb) {
-        setData(JSON.parse(storedDb));
-      }
-    };
-    loadData();
+  const loadData = useCallback(async () => {
+    // Esta línea la uso para limpiar la base de datos almacenada en AsyncStorage durante las pruebas
+    //await AsyncStorage.removeItem('argentinaDB')
+    const storedDb = await AsyncStorage.getItem("argentinaDB");
+    if (storedDb) {
+      setData(JSON.parse(storedDb));
+    }
   }, []);
+
+  useEffect(() => {
+    loadData();
+  }, [loadData]);
+
+  useFocusEffect(
+    useCallback(() => {
+      loadData();
+    }, [loadData]),
+  );
 
   const totalItems = Array.isArray(data) ? data.length : 0;
   const ownedCount = Array.isArray(data)
