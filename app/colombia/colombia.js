@@ -130,7 +130,7 @@ const styles = StyleSheet.create({
     left: 0,
     top: 0,
     bottom: 0,
-    backgroundColor: "#FBFA03",
+    backgroundColor: "#6b6b02",
     zIndex: 1,
   },
   progressText: {
