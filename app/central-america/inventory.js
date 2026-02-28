@@ -1594,10 +1594,11 @@ const inventory = [
     "YEAR DATE": 2010,
     MONTH: "MARZO",
     "YEAR NUMBER": 3,
-    "OVERALL NUMBER": 220,
+    "OVERALL NUMBER": 220, /*No sé por qué saltó del 209 al 220*/
     COVER: "SONIC",
     OWNED: "NO",
     "POSTER THEME": "-",
+    COUNTRY: "CENTROAMÉRICA",
   },
   {
     "YEAR EDIT": 19,
@@ -1608,6 +1609,7 @@ const inventory = [
     COVER: "WARIOWARE D.I.Y.",
     OWNED: "NO",
     "POSTER THEME": "-",
+    COUNTRY: "CENTROAMÉRICA",
   },
   {
     "YEAR EDIT": 19,
@@ -1618,6 +1620,7 @@ const inventory = [
     COVER: "SUPER MARIO GALAXY 2 - YOSHI",
     OWNED: "NO",
     "POSTER THEME": "-",
+    COUNTRY: "CENTROAMÉRICA",
   },
   {
     "YEAR EDIT": 19,
@@ -1630,6 +1633,7 @@ const inventory = [
     POSTER: "-",
     "POSTER THEME": "-",
     OBSERVATION: "-",
+    COUNTRY: "CENTROAMÉRICA",
   },
   {
     "YEAR EDIT": 19,
@@ -1642,6 +1646,7 @@ const inventory = [
     POSTER: "-",
     "POSTER THEME": "-",
     OBSERVATION: "-",
+    COUNTRY: "CENTROAMÉRICA",
   },
   {
     "YEAR EDIT": 19,
@@ -1654,6 +1659,7 @@ const inventory = [
     POSTER: "-",
     "POSTER THEME": "-",
     OBSERVATION: "-",
+    COUNTRY: "CENTROAMÉRICA",
   },
   {
     "YEAR EDIT": 19,
@@ -1666,6 +1672,7 @@ const inventory = [
     POSTER: "-",
     "POSTER THEME": "-",
     OBSERVATION: "-",
+    COUNTRY: "CENTROAMÉRICA",
   },
   {
     "YEAR EDIT": 19,
@@ -1676,6 +1683,7 @@ const inventory = [
     COVER: "NBA JAM",
     OWNED: "NO",
     "POSTER THEME": "-",
+    COUNTRY: "CENTROAMÉRICA",
   },
   {
     "YEAR EDIT": 19,
@@ -1686,6 +1694,7 @@ const inventory = [
     COVER: "PES 2011 - MESSI",
     OWNED: "NO",
     "POSTER THEME": "-",
+    COUNTRY: "CENTROAMÉRICA",
   },
   {
     "YEAR EDIT": 19,
@@ -1698,6 +1707,7 @@ const inventory = [
     POSTER: "MISSING: CHILEAN VERSION",
     "POSTER THEME": "METROID OTHER M / DONKEY KONG COUNTRY RETURN",
     OBSERVATION: "DAÑO EN EL LOMO",
+    COUNTRY: "CENTROAMÉRICA",
   },
   {
     "YEAR EDIT": 20,
@@ -1709,6 +1719,7 @@ const inventory = [
     OWNED: "NO",
     POSTER: "-",
     "POSTER THEME": "-",
+    COUNTRY: "CENTROAMÉRICA",
   },
   {
     "YEAR EDIT": 20,
@@ -1721,6 +1732,7 @@ const inventory = [
     POSTER: "-",
     "POSTER THEME": "-",
     OBSERVATION: "PEQUEÑO HUECO EN LA PORTADA. PÁG 83-84 UN POCO ROTA",
+    COUNTRY: "CENTROAMÉRICA",
   },
   {
     "YEAR EDIT": 20,
@@ -1731,6 +1743,7 @@ const inventory = [
     COVER: "KID ICARUS - NINTENDO 3DS",
     OWNED: "NO",
     "POSTER THEME": "-",
+    COUNTRY: "CENTROAMÉRICA",
   },
   {
     "YEAR EDIT": 20,
@@ -1742,6 +1755,7 @@ const inventory = [
     OWNED: "NO",
     POSTER: "-",
     "POSTER THEME": "-",
+    COUNTRY: "CENTROAMÉRICA",
   },
   {
     "YEAR EDIT": 20,
@@ -1752,6 +1766,7 @@ const inventory = [
     COVER: "SONIC",
     OWNED: "NO",
     "POSTER THEME": "-",
+    COUNTRY: "CENTROAMÉRICA",
   },
   {
     "YEAR EDIT": 20,
@@ -1762,6 +1777,7 @@ const inventory = [
     COVER: "ZELDA",
     OWNED: "NO",
     "POSTER THEME": "-",
+    COUNTRY: "CENTROAMÉRICA",
   },
   {
     "YEAR EDIT": 20,
@@ -1772,6 +1788,7 @@ const inventory = [
     COVER: "E3 - MARIO - WII U",
     OWNED: "NO",
     "POSTER THEME": "-",
+    COUNTRY: "CENTROAMÉRICA",
   },
   {
     "YEAR EDIT": 20,
@@ -1783,6 +1800,7 @@ const inventory = [
     OWNED: "NO",
     POSTER: "-",
     "POSTER THEME": "-",
+    COUNTRY: "CENTROAMÉRICA",
   },
   {
     "YEAR EDIT": 20,
@@ -1793,6 +1811,7 @@ const inventory = [
     COVER: "STARFOX 64 3D",
     OWNED: "NO",
     "POSTER THEME": "-",
+    COUNTRY: "CENTROAMÉRICA",
   },
   {
     "YEAR EDIT": 20,
@@ -1804,6 +1823,7 @@ const inventory = [
     OWNED: "NO",
     POSTER: "-",
     "POSTER THEME": "-",
+    COUNTRY: "CENTROAMÉRICA",
   },
   {
     "YEAR EDIT": 20,
@@ -1816,6 +1836,7 @@ const inventory = [
     POSTER: "-",
     "POSTER THEME": "-",
     OBSERVATION: "-",
+    COUNTRY: "CENTROAMÉRICA",
   },
   {
     "YEAR EDIT": 20,
@@ -1826,6 +1847,7 @@ const inventory = [
     COVER: "ZELDA",
     OWNED: "NO",
     "POSTER THEME": "THE LEGEND OF ZELDA: SKYWARD SWORD",
+    COUNTRY: "CENTROAMÉRICA",
   },
   {
     "YEAR EDIT": 21,
@@ -1838,6 +1860,7 @@ const inventory = [
     POSTER: "-",
     "POSTER THEME": "-",
     OBSERVATION: "-",
+    COUNTRY: "CENTROAMÉRICA",
   },
   {
     "YEAR EDIT": 21,
@@ -1850,6 +1873,7 @@ const inventory = [
     POSTER: "-",
     "POSTER THEME": "-",
     OBSERVATION: "-",
+    COUNTRY: "CENTROAMÉRICA",
   },
   {
     "YEAR EDIT": 21,
@@ -1860,6 +1884,7 @@ const inventory = [
     COVER: "KID ICARUS",
     OWNED: "NO",
     "POSTER THEME": "-",
+    COUNTRY: "CENTROAMÉRICA",
   },
   {
     "YEAR EDIT": 21,
@@ -1872,6 +1897,7 @@ const inventory = [
     POSTER: "MISSING: CHILEAN VERSION",
     "POSTER THEME": "MARIO KART 7 / POKEPARK 2",
     OBSERVATION: "FROM CHILE",
+    COUNTRY: "CENTROAMÉRICA",
   },
   {
     "YEAR EDIT": 21,
@@ -1882,6 +1908,7 @@ const inventory = [
     COVER: "EPIC MICKEY 2",
     OWNED: "NO",
     "POSTER THEME": "-",
+    COUNTRY: "CENTROAMÉRICA",
   },
   {
     "YEAR EDIT": 21,
@@ -1895,6 +1922,7 @@ const inventory = [
     "POSTER THEME": "-",
     OBSERVATION:
       "PORTADA DAÑADA EN ESQUINA SUPERIOR DERECHA. CONTRAPORTADA CON TROZO FALTANTE",
+    COUNTRY: "CENTROAMÉRICA",
   },
   {
     "YEAR EDIT": 21,
@@ -1907,6 +1935,7 @@ const inventory = [
     POSTER: "-",
     "POSTER THEME": "-",
     OBSERVATION: "MISSING PAGES: 19-20",
+    COUNTRY: "CENTROAMÉRICA",
   },
   {
     "YEAR EDIT": 21,
@@ -1919,6 +1948,7 @@ const inventory = [
     POSTER: "-",
     "POSTER THEME": "-",
     OBSERVATION: "-",
+    COUNTRY: "CENTROAMÉRICA",
   },
   {
     "YEAR EDIT": 21,
@@ -1929,6 +1959,7 @@ const inventory = [
     COVER: "METROID",
     OWNED: "NO",
     "POSTER THEME": "METROID",
+    COUNTRY: "CENTROAMÉRICA",
   },
   {
     "YEAR EDIT": 21,
@@ -1941,6 +1972,7 @@ const inventory = [
     POSTER: "-",
     "POSTER THEME": "-",
     OBSERVATION: "PORTADA Y PÁG 1-2 ARRUGADAS. PÁG 1-2 FALTA PEDAZO",
+    COUNTRY: "CENTROAMÉRICA",
   },
   {
     "YEAR EDIT": 21,
@@ -1953,6 +1985,7 @@ const inventory = [
     POSTER: "-",
     "POSTER THEME": "-",
     OBSERVATION: "-",
+    COUNTRY: "CENTROAMÉRICA",
   },
   {
     "YEAR EDIT": 21,
@@ -1963,6 +1996,7 @@ const inventory = [
     COVER: "21 ANIVERSARIO - MARIO - YOSHI",
     OWNED: "NO",
     "POSTER THEME": "NEW SUPER MARIO BROS. U / BATMAN ARKHAM CITY",
+    COUNTRY: "CENTROAMÉRICA",
   },
   {
     "YEAR EDIT": 22,
@@ -1973,6 +2007,7 @@ const inventory = [
     COVER: "NINJA GAIDEN 3",
     OWNED: "NO",
     "POSTER THEME": "-",
+    COUNTRY: "CENTROAMÉRICA",
   },
   {
     "YEAR EDIT": 22,
@@ -1985,6 +2020,7 @@ const inventory = [
     POSTER: "-",
     "POSTER THEME": "-",
     OBSERVATION: "-",
+    COUNTRY: "CENTROAMÉRICA",
   },
   {
     "YEAR EDIT": 22,
@@ -1995,6 +2031,7 @@ const inventory = [
     COVER: "CASTLEVANIA",
     OWNED: "NO",
     "POSTER THEME": "CASTLEVANIA: LORD OF SHADOW / LUIGI'S MANSION DARK MOON",
+    COUNTRY: "CENTROAMÉRICA",
   },
   {
     "YEAR EDIT": 22,
@@ -2005,6 +2042,7 @@ const inventory = [
     COVER: "INJUSTICE",
     OWNED: "NO",
     "POSTER THEME": "-",
+    COUNTRY: "CENTROAMÉRICA",
   },
   {
     "YEAR EDIT": 22,
@@ -2015,6 +2053,7 @@ const inventory = [
     COVER: "DONKEY KONG",
     OWNED: "NO",
     "POSTER THEME": "-",
+    COUNTRY: "CENTROAMÉRICA",
   },
   {
     "YEAR EDIT": 22,
@@ -2025,6 +2064,7 @@ const inventory = [
     COVER: "ANIMAL CROSSING",
     OWNED: "NO",
     "POSTER THEME": "CALENDARIOS DE ANIMAL CROSSING (JUN 2013 - MAYO 2014)",
+    COUNTRY: "CENTROAMÉRICA",
   },
   {
     "YEAR EDIT": 22,
@@ -2035,6 +2075,7 @@ const inventory = [
     COVER: "DISNEY INFINITY",
     OWNED: "NO",
     "POSTER THEME": "-",
+    COUNTRY: "CENTROAMÉRICA",
   },
   {
     "YEAR EDIT": 22,
@@ -2045,6 +2086,7 @@ const inventory = [
     COVER: "SUPER SMASH BROS.",
     OWNED: "NO",
     "POSTER THEME": "-",
+    COUNTRY: "CENTROAMÉRICA",
   },
   {
     "YEAR EDIT": 22,
@@ -2055,6 +2097,7 @@ const inventory = [
     COVER: "PIKMIN 3",
     OWNED: "NO",
     "POSTER THEME": "-",
+    COUNTRY: "CENTROAMÉRICA",
   },
   {
     "YEAR EDIT": 22,
@@ -2065,6 +2108,7 @@ const inventory = [
     COVER: "ZELDA WINDWAKER HD",
     OWNED: "NO",
     "POSTER THEME": "-",
+    COUNTRY: "CENTROAMÉRICA",
   },
   {
     "YEAR EDIT": 22,
@@ -2075,6 +2119,7 @@ const inventory = [
     COVER: "SONIC LOST WORLD",
     OWNED: "NO",
     "POSTER THEME": "SUPER SMASH BROS. / NEW SUPER LUIGI U",
+    COUNTRY: "CENTROAMÉRICA",
   },
   {
     "YEAR EDIT": 22,
@@ -2086,6 +2131,7 @@ const inventory = [
     OWNED: "NO",
     "POSTER THEME":
       "SUPER MARIO 3D WORLD / THE LEGEND OF ZELDA: A LINK BETWEEN WORLDS",
+    COUNTRY: "CENTROAMÉRICA",
   },
   {
     "YEAR EDIT": 23,
@@ -2096,6 +2142,7 @@ const inventory = [
     COVER: "MARIO PARTY ISLAND TOUR",
     OWNED: "NO",
     "POSTER THEME": "-",
+    COUNTRY: "CENTROAMÉRICA",
   },
   {
     "YEAR EDIT": 23,
@@ -2106,6 +2153,7 @@ const inventory = [
     COVER: "ZELDA - PAREJAS LEGENDARIAS",
     OWNED: "NO",
     "POSTER THEME": "-",
+    COUNTRY: "CENTROAMÉRICA",
   },
   {
     "YEAR EDIT": 23,
@@ -2117,6 +2165,7 @@ const inventory = [
     OWNED: "NO",
     "POSTER THEME":
       "DONKEY KONG COUNTRY TROPICAL FREEZE / MARIO PARTY ISLAND TOUR",
+    COUNTRY: "CENTROAMÉRICA",
   },
   {
     "YEAR EDIT": 23,
@@ -2127,6 +2176,7 @@ const inventory = [
     COVER: "YOSHI'S NEW ISLAND - BEBÉ MARIO",
     OWNED: "NO",
     "POSTER THEME": "-",
+    COUNTRY: "CENTROAMÉRICA",
   },
   // {
   //     "YEAR EDIT": 23,
@@ -2147,6 +2197,7 @@ const inventory = [
     COVER: "MARIO KART 8",
     OWNED: "NO",
     "POSTER THEME": "-",
+    COUNTRY: "CENTROAMÉRICA",
   },
   {
     "YEAR EDIT": 23,
@@ -2157,6 +2208,7 @@ const inventory = [
     COVER: "KIRBY TRIPLE DELUXE",
     OWNED: "NO",
     "POSTER THEME": "MARIO KART 8 / YOSHI'S NEW ISLAND",
+    COUNTRY: "CENTROAMÉRICA",
   },
   {
     "YEAR EDIT": 23,
@@ -2167,6 +2219,7 @@ const inventory = [
     COVER: "SUPER SMASH BROS. FOR NINTENDO 3DS",
     OWNED: "NO",
     "POSTER THEME": "-",
+    COUNTRY: "CENTROAMÉRICA",
   },
   {
     "YEAR EDIT": 23,
@@ -2177,6 +2230,7 @@ const inventory = [
     COVER: "DISNEY INFINITY 2.0 - SPIDER MAN",
     OWNED: "NO",
     "POSTER THEME": "-",
+    COUNTRY: "CENTROAMÉRICA",
   },
   {
     "YEAR EDIT": 23,
@@ -2187,6 +2241,7 @@ const inventory = [
     COVER: "ZELDA - HYRULE WARRIORS",
     OWNED: "NO",
     "POSTER THEME": "MARIO GOLF WORLD TOUR",
+    COUNTRY: "CENTROAMÉRICA",
   },
   {
     "YEAR EDIT": 23,
@@ -2197,6 +2252,7 @@ const inventory = [
     COVER: "BAYONETTA 2",
     OWNED: "NO",
     "POSTER THEME": "-",
+    COUNTRY: "CENTROAMÉRICA",
   },
   {
     "YEAR EDIT": 23,
@@ -2207,6 +2263,7 @@ const inventory = [
     COVER: "EL MUNDO DE BOWSER - SPECIAL",
     OWNED: "NO",
     "POSTER THEME": "MARIO PARTY 10 / MARIO & LUIGI BOWSER'S INSIDE STORY",
+    COUNTRY: "CENTROAMÉRICA",
   },
   {
     "YEAR EDIT": 23,
@@ -2217,6 +2274,7 @@ const inventory = [
     COVER: "SUPER SMASH BROS. FOR WII U",
     OWNED: "NO",
     "POSTER THEME": "BAYONETTA 2 / SUPER SMASH BROS. FOR WII U",
+    COUNTRY: "CENTROAMÉRICA",
   },
   {
     "YEAR EDIT": 24,
@@ -2227,6 +2285,7 @@ const inventory = [
     COVER: "LA JUNGLA DE DONKEY KONG - SPECIAL",
     OWNED: "NO",
     "POSTER THEME": "-",
+    COUNTRY: "CENTROAMÉRICA",
   },
   {
     "YEAR EDIT": 24,
@@ -2237,6 +2296,7 @@ const inventory = [
     COVER: "ZELDA MAJORA'S MASK",
     OWNED: "NO",
     "POSTER THEME": "THE LEGEND OF ZELDA: MAJORA'S MASK 3D",
+    COUNTRY: "CENTROAMÉRICA",
   },
   {
     "YEAR EDIT": 24,
@@ -2247,6 +2307,7 @@ const inventory = [
     COVER: "MARIO PARTY 10",
     OWNED: "NO",
     "POSTER THEME": "MARIO PARTY 10",
+    COUNTRY: "CENTROAMÉRICA",
   },
 ];
 

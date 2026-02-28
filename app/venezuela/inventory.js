@@ -8,6 +8,8 @@ const inventory = [
     COVER: "SUPER MARIO WORLD",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "VENEZUELA",
   },
   {
     "YEAR EDIT": 1,
@@ -18,6 +20,8 @@ const inventory = [
     COVER: "SUPER MARIO BROS. 3",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "VENEZUELA",
   },
   {
     "YEAR EDIT": 1,
@@ -28,6 +32,8 @@ const inventory = [
     COVER: "BART - LOS SIMPSONS",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "VENEZUELA",
   },
   {
     "YEAR EDIT": 2,
@@ -39,6 +45,7 @@ const inventory = [
     OWNED: "NO",
     POSTER: "MISSING: PAGES 23-26",
     "POSTER THEME": "DOUBLE DRAGON III",
+    OBSERVATION: "-",
     COUNTRY: "VENEZUELA",
   },
   {
@@ -50,6 +57,8 @@ const inventory = [
     COVER: "S.O.S. - SPECIAL",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "VENEZUELA",
   },
   {
     "YEAR EDIT": 2,
@@ -61,8 +70,7 @@ const inventory = [
     OWNED: "NO",
     POSTER: "-",
     "POSTER THEME": "-",
-    OBSERVATION:
-      "LOMO ROTO. PORTADA Y CONTRAPORTADA SUELTAS. PÁGINAS RAYADAS: 17, 19, 46.",
+    OBSERVATION: "-",
     COUNTRY: "VENEZUELA",
   },
   {
@@ -74,6 +82,8 @@ const inventory = [
     COVER: "THE FLINSTONES - PICAPIEDRAS",
     OWNED: "NO",
     "POSTER THEME": "EXTRA: CUBITIPS BATMAN RETURN OF THE JOKER",
+    OBSERVATION: "-",
+    COUNTRY: "VENEZUELA",
   },
   {
     "YEAR EDIT": 2,
@@ -85,7 +95,7 @@ const inventory = [
     OWNED: "NO",
     POSTER: "MISSING: PAGES 23-26",
     "POSTER THEME": "STREET FIGHTER II / EXTRA: CUBITIPS SUPER MARIO WORLD",
-    OBSERVATION: "FALTA CONTRAPORTADA",
+    OBSERVATION: "-",
     COUNTRY: "VENEZUELA",
   },
   {
@@ -98,7 +108,7 @@ const inventory = [
     OWNED: "NO",
     POSTER: "MISSING: PAGES 32-35",
     "POSTER THEME": "FELIX THE CAT / AXELAY",
-    OBSERVATION: "PORTADA Y CONTRAPORTADA PEGADAS CON CINTA",
+    OBSERVATION: "-",
     COUNTRY: "VENEZUELA",
   },
   {
@@ -163,7 +173,7 @@ const inventory = [
     OWNED: "NO",
     POSTER: "-",
     "POSTER THEME": "-",
-    OBSERVATION: "FALTA CONTRAPORTADA",
+    OBSERVATION: "-",
     COUNTRY: "VENEZUELA",
   },
   {
@@ -176,8 +186,7 @@ const inventory = [
     OWNED: "NO",
     POSTER: "MISSING: PAGES 25-32",
     "POSTER THEME": "CYBERNATOR",
-    OBSERVATION:
-      "LOMO UN POCO DAÑADO. CURIOSIDAD: DESDE LA PÁGINA 17 HASTA LA 24 SON DE NINTENDO POWER",
+    OBSERVATION: "-",
     COUNTRY: "VENEZUELA",
   },
   {
@@ -190,7 +199,7 @@ const inventory = [
     OWNED: "NO",
     POSTER: "MISSING: PAGES 25-32",
     "POSTER THEME": "CALENDARIO 1994 / STARFOX",
-    OBSERVATION: "LOMO DAÑADO - PÁGINA CENTRAL SUELTA",
+    OBSERVATION: "-",
     COUNTRY: "VENEZUELA",
   },
   {
@@ -203,6 +212,7 @@ const inventory = [
     OWNED: "NO",
     POSTER: "MISSING: PAGES 25-32",
     "POSTER THEME": "RUN SABER",
+    OBSERVATION: "-",
     COUNTRY: "VENEZUELA",
   },
   {
@@ -215,7 +225,7 @@ const inventory = [
     OWNED: "NO",
     POSTER: "-",
     "POSTER THEME": "-",
-    OBSERVATION: "PORTADA UN POCO SUELTA Y ESQUINA ROTA",
+    OBSERVATION: "-",
     COUNTRY: "VENEZUELA",
   },
   {
@@ -228,6 +238,7 @@ const inventory = [
     OWNED: "NO",
     POSTER: "-",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
     COUNTRY: "VENEZUELA",
   },
   {
@@ -240,7 +251,7 @@ const inventory = [
     OWNED: "NO",
     POSTER: "MISSING: PAGES 25-32",
     "POSTER THEME": "MEGAMAN X",
-    OBSERVATION: "PORTADA CASI SUELTA Y REPARADA CON CINTA",
+    OBSERVATION: "-",
     COUNTRY: "VENEZUELA",
   },
   {
@@ -304,6 +315,8 @@ const inventory = [
     COVER: "SUPER METROID",
     OWNED: "NO",
     "POSTER THEME": "SPEEDY GONZALES LOS GATOS BANDIDOS / SUPER METROID",
+    OBSERVATION: "-",
+    COUNTRY: "VENEZUELA",
   },
   {
     "YEAR EDIT": 3,
@@ -329,6 +342,8 @@ const inventory = [
     POSTER: "MISSING: PAGES 27-34",
     "POSTER THEME":
       "SUPER BOMBERMAN 2 - SUPER ADVENTURE ISLAND 2 - DONKEY KONG COUNTRY / LETHAL ENFORCERS",
+    OBSERVATION: "-",
+    COUNTRY: "VENEZUELA",
   },
   {
     "YEAR EDIT": 3,
@@ -339,6 +354,8 @@ const inventory = [
     COVER: "DONKEY KONG COUNTRY",
     OWNED: "NO",
     "POSTER THEME": "DONKEY KONG COUNTRY / DARKSTALKERS",
+    OBSERVATION: "-",
+    COUNTRY: "VENEZUELA",
   },
   {
     "YEAR EDIT": 4,
@@ -349,6 +366,8 @@ const inventory = [
     COVER: "MORTAL KOMBAT II",
     OWNED: "NO",
     "POSTER THEME": "CALENDARIO 1995",
+    OBSERVATION: "-",
+    COUNTRY: "VENEZUELA",
   },
   {
     "YEAR EDIT": 4,
@@ -359,6 +378,8 @@ const inventory = [
     COVER: "DONKEY KONG COUNTRY",
     OWNED: "NO",
     "POSTER THEME": "MORTAL KOMBAT II / MAXIMUM CARNAGE",
+    OBSERVATION: "-",
+    COUNTRY: "VENEZUELA",
   },
   {
     "YEAR EDIT": 4,
@@ -382,6 +403,8 @@ const inventory = [
     COVER: "FATAL FURY - CRESTA AMARILLA",
     OWNED: "NO",
     "POSTER THEME": "FATAL FURY",
+    OBSERVATION: "-",
+    COUNTRY: "VENEZUELA",
   },
   {
     "YEAR EDIT": 4,
@@ -392,6 +415,8 @@ const inventory = [
     COVER: "SPIDER MAN",
     OWNED: "NO",
     "POSTER THEME": "FX FIGHTER / SPIDER-MAN",
+    OBSERVATION: "-",
+    COUNTRY: "VENEZUELA",
   },
   {
     "YEAR EDIT": 4,
@@ -402,6 +427,8 @@ const inventory = [
     COVER: "MEGAMAN X2",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "VENEZUELA",
   },
   {
     "YEAR EDIT": 4,
@@ -425,6 +452,8 @@ const inventory = [
     COVER: "KILLER INSTINCT",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "VENEZUELA",
   },
   {
     "YEAR EDIT": 4,
@@ -448,6 +477,8 @@ const inventory = [
     COVER: "VIRTUAL BOY",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "VENEZUELA",
   },
   {
     "YEAR EDIT": 4,
@@ -458,6 +489,8 @@ const inventory = [
     COVER: "YOSHI'S ISLAND - BEBÉ MARIO",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "VENEZUELA",
   },
   {
     "YEAR EDIT": 4,
@@ -469,6 +502,7 @@ const inventory = [
     OWNED: "NO",
     POSTER: "-",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
     COUNTRY: "VENEZUELA",
   },
   {
@@ -546,7 +580,7 @@ const inventory = [
     OWNED: "NO",
     POSTER: "-",
     "POSTER THEME": "-",
-    OBSERVATION: "LOMO UN POCO DAÑADO",
+    OBSERVATION: "-",
     COUNTRY: "VENEZUELA",
   },
   {
@@ -558,6 +592,8 @@ const inventory = [
     COVER: "STREET FIGHTER ZERO 2",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "VENEZUELA",
   },
   {
     "YEAR EDIT": 5,
@@ -582,7 +618,7 @@ const inventory = [
     OWNED: "NO",
     POSTER: "-",
     "POSTER THEME": "-",
-    OBSERVATION: "LOMO UN POCO DAÑADO",
+    OBSERVATION: "-",
     COUNTRY: "VENEZUELA",
   },
   {
@@ -594,6 +630,8 @@ const inventory = [
     COVER: "NINTENDO 64 - PILOTWINGS 64",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "VENEZUELA",
   },
   {
     "YEAR EDIT": 5,
@@ -605,6 +643,8 @@ const inventory = [
     OWNED: "NO",
     POSTER: "-",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "VENEZUELA",
   },
   {
     "YEAR EDIT": 5,
@@ -641,6 +681,8 @@ const inventory = [
     COVER: "MARIO KART 64",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "VENEZUELA",
   },
   {
     "YEAR EDIT": 6,
@@ -652,6 +694,8 @@ const inventory = [
     OWNED: "NO",
     POSTER: "-",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "VENEZUELA",
   },
   {
     "YEAR EDIT": 6,
@@ -675,6 +719,8 @@ const inventory = [
     COVER: "MARIO - LUIGI - PEACH - BOWSER",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "VENEZUELA",
   },
   {
     "YEAR EDIT": 6,
@@ -699,7 +745,7 @@ const inventory = [
     OWNED: "NO",
     POSTER: "-",
     "POSTER THEME": "-",
-    OBSERVATION: "PÁGINA CENTRAL SUELTA",
+    OBSERVATION: "-",
     COUNTRY: "VENEZUELA",
   },
   {
@@ -739,6 +785,7 @@ const inventory = [
     POSTER: "-",
     "POSTER THEME": "-",
     OBSERVATION: "-",
+    COUNTRY: "VENEZUELA",
   },
   {
     "YEAR EDIT": 6,
@@ -763,7 +810,7 @@ const inventory = [
     OWNED: "NO",
     POSTER: "MISSING: PAGES 29-36",
     "POSTER THEME": "GOLDENEYE 007 / MARIO KART 64",
-    OBSERVATION: "CONTRAPORTADA PRESENTA TROZO TRIANGULAR CORTADO",
+    OBSERVATION: "-",
     COUNTRY: "VENEZUELA",
   },
   {
@@ -816,6 +863,7 @@ const inventory = [
     POSTER: "-",
     "POSTER THEME": "-",
     OBSERVATION: "-",
+    COUNTRY: "VENEZUELA",
   },
   {
     "YEAR EDIT": 7,
@@ -826,6 +874,8 @@ const inventory = [
     COVER: "1080 SNOWBOARDING",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "VENEZUELA",
   },
   {
     "YEAR EDIT": 7,
@@ -849,6 +899,8 @@ const inventory = [
     COVER: "BANJO - KAZOOIE",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "VENEZUELA",
   },
   {
     "YEAR EDIT": 7,
@@ -859,6 +911,8 @@ const inventory = [
     COVER: "MORTAL KOMBAT 4",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "VENEZUELA",
   },
   {
     "YEAR EDIT": 7,
@@ -882,6 +936,8 @@ const inventory = [
     COVER: "POKEMON STAR PIKACHU - CRUIS'N WORLD",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "VENEZUELA",
   },
   {
     "YEAR EDIT": 7,
@@ -892,6 +948,8 @@ const inventory = [
     COVER: "POKEMON - ASH - PIKACHU",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "VENEZUELA",
   },
   {
     "YEAR EDIT": 7,
@@ -902,6 +960,8 @@ const inventory = [
     COVER: "ENCICLOPEDIA - SPECIAL",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "VENEZUELA",
   },
   {
     "YEAR EDIT": 7,
@@ -938,6 +998,8 @@ const inventory = [
     COVER: "CASTLEVANIA",
     OWNED: "NO",
     "POSTER THEME": "DEADLY ARTS / POKEMON",
+    OBSERVATION: "-",
+    COUNTRY: "VENEZUELA",
   },
   {
     "YEAR EDIT": 8,
@@ -1026,6 +1088,8 @@ const inventory = [
     COVER: "POKEMON SNAP",
     OWNED: "NO",
     "POSTER THEME": "POKEMON SNAP",
+    OBSERVATION: "-",
+    COUNTRY: "VENEZUELA",
   },
   {
     "YEAR EDIT": 8,
@@ -1050,8 +1114,7 @@ const inventory = [
     OWNED: "NO",
     POSTER: "INCLUDED: PAGES 41-48",
     "POSTER THEME": "RE-VOLT",
-    OBSERVATION:
-      "DAÑO EN EL LOMO - ALGUNAS PÁGINAS SUELTAS - PÁG. 87 RECORTADA",
+    OBSERVATION: "-",
     COUNTRY: "VENEZUELA",
   },
   {
@@ -1064,7 +1127,7 @@ const inventory = [
     OWNED: "NO",
     POSTER: "-",
     "POSTER THEME": "-",
-    OBSERVATION: "PÁG. 7 RECORTADA",
+    OBSERVATION: "-",
     COUNTRY: "VENEZUELA",
   },
   {
@@ -1415,7 +1478,7 @@ const inventory = [
     OWNED: "NO",
     POSTER: "MISSING: PAGES 41-48",
     "POSTER THEME": "MEGAMAN BATTLE NETWORK 2 / ARTE SOBRES",
-    OBSERVATION: "PÁGINAS RECORTADAS: 9-10, 95-96",
+    OBSERVATION: "-",
     COUNTRY: "VENEZUELA",
   },
   {
@@ -1428,7 +1491,7 @@ const inventory = [
     OWNED: "NO",
     POSTER: "-",
     "POSTER THEME": "-",
-    OBSERVATION: "PÁGINA 94 MEDIO SUELTA",
+    OBSERVATION: "-",
     COUNTRY: "VENEZUELA",
   },
   {
@@ -1506,7 +1569,7 @@ const inventory = [
     OWNED: "NO",
     POSTER: "-",
     "POSTER THEME": "-",
-    OBSERVATION: "CONTRAPORTADA UN POCO ROTA",
+    OBSERVATION: "-",
     COUNTRY: "VENEZUELA",
   },
   {

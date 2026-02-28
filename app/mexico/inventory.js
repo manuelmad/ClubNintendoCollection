@@ -8,6 +8,8 @@ const inventory = [
     COVER: "MARIO",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 1,
@@ -18,6 +20,8 @@ const inventory = [
     COVER: "SUPER MARIO WORLD - YOSHI",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 1,
@@ -28,6 +32,8 @@ const inventory = [
     COVER: "MARIO",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 1,
@@ -38,6 +44,8 @@ const inventory = [
     COVER: "BART",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 1,
@@ -48,6 +56,8 @@ const inventory = [
     COVER: "F-ZERO",
     OWNED: "NO",
     "POSTER THEME": "DOUBLE DRAGON III",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 1,
@@ -58,6 +68,8 @@ const inventory = [
     COVER: "TINY TOONS",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 1,
@@ -68,6 +80,8 @@ const inventory = [
     COVER: "FLINTSTONES",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 1,
@@ -78,6 +92,8 @@ const inventory = [
     COVER: "STREET FIGHTER II",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 1,
@@ -88,6 +104,8 @@ const inventory = [
     COVER: "CONTROLES SPECIAL",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 1,
@@ -98,6 +116,8 @@ const inventory = [
     COVER: "MEGA MAN 4",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 1,
@@ -108,6 +128,8 @@ const inventory = [
     COVER: "BART VS. THE WORLD",
     OWNED: "NO",
     "POSTER THEME": "ADVENTURE ISLAND 3",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 1,
@@ -118,6 +140,8 @@ const inventory = [
     COVER: "MARIO",
     OWNED: "NO",
     "POSTER THEME": "FELIX THE CAT / AXELAY",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 1,
@@ -128,6 +152,8 @@ const inventory = [
     COVER: "COYOTE Y CORRECAMINOS",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 1,
@@ -138,6 +164,8 @@ const inventory = [
     COVER: "MICKEY MOUSE",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 2,
@@ -148,6 +176,8 @@ const inventory = [
     COVER: "BATMAN",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 2,
@@ -158,6 +188,8 @@ const inventory = [
     COVER: "TINY TOONS",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 2,
@@ -168,6 +200,8 @@ const inventory = [
     COVER: "SUPER FX",
     OWNED: "NO",
     "POSTER THEME": "CALENDARIO STREET FIGHTER II / WIDGET",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 2,
@@ -178,6 +212,8 @@ const inventory = [
     COVER: "STARFOX",
     OWNED: "NO",
     "POSTER THEME": "CYBERNATOR",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 2,
@@ -189,6 +225,8 @@ const inventory = [
     OWNED: "NO",
     "POSTER THEME":
       "KID DRACULA / BATMAN RETURNS / STAR FOX / PUBLICIDAD JUEGOS",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 2,
@@ -199,6 +237,8 @@ const inventory = [
     COVER: "BATTLETOADS",
     OWNED: "NO",
     "POSTER THEME": "BATTLETOADS / RUN SABER",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 2,
@@ -210,6 +250,8 @@ const inventory = [
     OWNED: "NO",
     "POSTER THEME":
       "CALENDARIO STREET FIGHTER II  (JULIO - AGOSTO) / ARTE EN SOBRES",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 2,
@@ -220,6 +262,8 @@ const inventory = [
     COVER: "STREET FIGHTER II SPECIAL",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 2,
@@ -230,6 +274,8 @@ const inventory = [
     COVER: "SUPER MARIO ALL STARS",
     OWNED: "NO",
     "POSTER THEME": "RAGING FIGTHER / ARTE EN SOBRES",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 2,
@@ -241,6 +287,8 @@ const inventory = [
     OWNED: "NO",
     "POSTER THEME":
       "CALENDARIO STREET FIGHTER II (SETIEMBRE – OCTUBRE) / ARTE EN SOBRES",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 2,
@@ -251,6 +299,8 @@ const inventory = [
     COVER: "JURASSIC PARK",
     OWNED: "NO",
     "POSTER THEME": "ZOMBIES ATE MY NEIGHBORS / ARTE EN SOBRES",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 2,
@@ -262,6 +312,8 @@ const inventory = [
     OWNED: "NO",
     "POSTER THEME":
       "CALENDARIO STREET FIGHTER II (NOVIEMBRE – DICIEMBRE)  / ARTE EN SOBRES",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 2,
@@ -273,6 +325,8 @@ const inventory = [
     OWNED: "NO",
     "POSTER THEME":
       "VOLANTE DEL EVENTO DE PRESENTACIÓN DEL VIDEOJUEGO DE CHÁVEZ",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 3,
@@ -283,6 +337,8 @@ const inventory = [
     COVER: "MEGA MAN X",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 3,
@@ -293,6 +349,8 @@ const inventory = [
     COVER: "SUPER METROID",
     OWNED: "NO",
     "POSTER THEME": "MEGAMAN X / ARTE EN SOBRES",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 3,
@@ -303,6 +361,8 @@ const inventory = [
     COVER: "NBA JAM",
     OWNED: "NO",
     "POSTER THEME": "LETHAL ENFORCES / ARTE EN SOBRES",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 3,
@@ -313,6 +373,8 @@ const inventory = [
     COVER: "STREET FIGHTER II TURBO",
     OWNED: "NO",
     "POSTER THEME": "LISTA DE JUEGOS DE SNES / ARTE EN SOBRES",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 3,
@@ -323,6 +385,8 @@ const inventory = [
     COVER: "DONKEY KONG",
     OWNED: "NO",
     "POSTER THEME": "KING OF DRAGONS / ARTE EN SOBRES",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 3,
@@ -333,6 +397,8 @@ const inventory = [
     COVER: "STUNT RACE FX",
     OWNED: "NO",
     "POSTER THEME": "SSF II TURBO / ARTE SOBRE SOBRES",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 3,
@@ -343,6 +409,8 @@ const inventory = [
     COVER: "SUPER STREET FIGHTER II",
     OWNED: "NO",
     "POSTER THEME": "SPEEDY GONZALES / ARTE EN SOBRES",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 3,
@@ -353,6 +421,8 @@ const inventory = [
     COVER: "BEAUTY AND THE BEAST",
     OWNED: "NO",
     "POSTER THEME": "AERO THE ACRO-BAT / ARTE EN SOBRES",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 3,
@@ -363,6 +433,8 @@ const inventory = [
     COVER: "MORTAL KOMBAT II",
     OWNED: "NO",
     "POSTER THEME": "DARKSTALKERS / ARTE EN SOBRES",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 3,
@@ -373,6 +445,8 @@ const inventory = [
     COVER: "SUPER ADVENTURE ISLAND II",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 3,
@@ -383,6 +457,8 @@ const inventory = [
     COVER: "DONKEY KONG COUNTRY",
     OWNED: "NO",
     "POSTER THEME": "SPARKSTER / ARTE EN SOBRES",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 3,
@@ -393,6 +469,8 @@ const inventory = [
     COVER: "SAMURAI SHODOWN",
     OWNED: "NO",
     "POSTER THEME": "MAXIMUM CARNAGE / ARTE EN SOBRES",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 4,
@@ -404,6 +482,8 @@ const inventory = [
     OWNED: "NO",
     "POSTER THEME":
       "ZERO THE KAMIKAZE SQUIRREL + AERO THE ACRO-BAT / ARTE EN  SOBRES",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 4,
@@ -414,6 +494,8 @@ const inventory = [
     COVER: "KILLER INSTINCT",
     OWNED: "NO",
     "POSTER THEME": "X-MEN MUTANT APOCALYPSE / ARTE EN SOBRES",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 4,
@@ -424,6 +506,8 @@ const inventory = [
     COVER: "KIRBY",
     OWNED: "NO",
     "POSTER THEME": "FX FIGHTER / ARTE SOBRE SOBRES",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 4,
@@ -434,6 +518,8 @@ const inventory = [
     COVER: "SPIDER MAN",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 4,
@@ -444,6 +530,8 @@ const inventory = [
     COVER: "STREET FIGHTER II",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 4,
@@ -454,6 +542,8 @@ const inventory = [
     COVER: "STREET FIGHTER II - NIGHT WARRIORS",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 4,
@@ -464,6 +554,8 @@ const inventory = [
     COVER: "VIRTUAL BOY",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 4,
@@ -474,6 +566,8 @@ const inventory = [
     COVER: "POWER RANGERS",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 4,
@@ -484,6 +578,8 @@ const inventory = [
     COVER: "KILLER INSTINCT",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 4,
@@ -494,6 +590,8 @@ const inventory = [
     COVER: "YOSHI'S ISLAND - BEBÉ MARIO",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 4,
@@ -504,6 +602,8 @@ const inventory = [
     COVER: "MORTAL KOMBAT 3",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 4,
@@ -514,6 +614,8 @@ const inventory = [
     COVER: "DIDDY KONG'S QUEST",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 5,
@@ -524,6 +626,8 @@ const inventory = [
     COVER: "MARIO - NINTENDO 64 - #50",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 5,
@@ -534,6 +638,8 @@ const inventory = [
     COVER: "SUPER MARIO RPG",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 5,
@@ -544,6 +650,8 @@ const inventory = [
     COVER: "DRAGON BALL",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 5,
@@ -554,6 +662,8 @@ const inventory = [
     COVER: "KILLER INSTINCT 2",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 5,
@@ -564,6 +674,8 @@ const inventory = [
     COVER: "TOY STORY",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 5,
@@ -574,6 +686,8 @@ const inventory = [
     COVER: "STREET FIGHTER ZERO 2",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 5,
@@ -584,6 +698,8 @@ const inventory = [
     COVER: "SUPER MARIO 64",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 5,
@@ -594,6 +710,8 @@ const inventory = [
     COVER: "KEN GRIIFEY JR'S WINNING RUN",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 5,
@@ -604,6 +722,8 @@ const inventory = [
     COVER: "NINTENDO 64",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 5,
@@ -614,6 +734,8 @@ const inventory = [
     COVER: "STAR WARS SHADOWS OF THE EMPIRE",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 5,
@@ -624,6 +746,8 @@ const inventory = [
     COVER: "MORTAL KOMBAT TRILOGY",
     OWNED: "NO",
     "POSTER THEME": "SUPER MARIO 64 / ARTE EN SOBRES",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 5,
@@ -634,6 +758,8 @@ const inventory = [
     COVER: "KILLER INSTINCT GOLD",
     OWNED: "NO",
     "POSTER THEME": "STREET FIGHTER ALPHA 2 / ARTE EN SOBRES",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 6,
@@ -644,6 +770,8 @@ const inventory = [
     COVER: "MARIO KART 64",
     OWNED: "NO",
     "POSTER THEME": "MORTAL KOMBAT TRILOGY / ARTE EN SOBRES",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 6,
@@ -654,6 +782,8 @@ const inventory = [
     COVER: "TUROK",
     OWNED: "NO",
     "POSTER THEME": "MARIO KART 64 / ARTE EN SOBRES",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 6,
@@ -664,6 +794,8 @@ const inventory = [
     COVER: "THE KING OF FIGHTERS 95",
     OWNED: "NO",
     "POSTER THEME": "PILOTWINGS 64 / ARTE EN SOBRES",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 6,
@@ -674,6 +806,8 @@ const inventory = [
     COVER: "MARIO - LUIGI - PEACH - BOWSER",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 6,
@@ -684,6 +818,8 @@ const inventory = [
     COVER: "MARIO - ARTE - SPECIAL",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 6,
@@ -694,6 +830,8 @@ const inventory = [
     COVER: "BLAST CORPS",
     OWNED: "NO",
     "POSTER THEME": "KIRBY'S STAR STACKER / ARTE EN SOBRES",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 6,
@@ -704,6 +842,8 @@ const inventory = [
     COVER: "STARFOX 64",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 6,
@@ -714,6 +854,8 @@ const inventory = [
     COVER: "CLAYFIGHTER 63 1/3",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 6,
@@ -724,6 +866,8 @@ const inventory = [
     COVER: "BANJO - KAZOOIE",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 6,
@@ -734,6 +878,8 @@ const inventory = [
     COVER: "GOLDENEYE 007",
     OWNED: "NO",
     "POSTER THEME": "MORTAL KOMBAT MYTHOLGIES / ARTE EN SOBRES",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 6,
@@ -744,6 +890,8 @@ const inventory = [
     COVER: "RUSH EXTREME RACING",
     OWNED: "NO",
     "POSTER THEME": "GOLDENEYE 007 / ARTE EN SOBRES",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 6,
@@ -754,6 +902,8 @@ const inventory = [
     COVER: "DIDDY KONG RACING",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 6,
@@ -764,6 +914,8 @@ const inventory = [
     COVER: "BOMBERMAN 64",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 7,
@@ -776,7 +928,7 @@ const inventory = [
     POSTER: "MISSING: PAGES 41-48",
     "POSTER THEME": "SAN FRANCISO RUSH / ARTE SOBRES",
     OBSERVATION: "-",
-    COUNTRY: "MEXICO",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 7,
@@ -787,6 +939,8 @@ const inventory = [
     COVER: "YOSHI'S STORY",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 7,
@@ -797,6 +951,8 @@ const inventory = [
     COVER: "NINJA GOEMON",
     OWNED: "NO",
     "POSTER THEME": "YOSHI'S STORY / ARTE EN SOBRES",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 7,
@@ -807,6 +963,8 @@ const inventory = [
     COVER: "1080 SNOWBOARDING",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 7,
@@ -817,6 +975,8 @@ const inventory = [
     COVER: "ENCICLOPEDIA - CONSOLAS - SPECIAL",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 7,
@@ -827,6 +987,8 @@ const inventory = [
     COVER: "WORLD CUP 98",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 7,
@@ -837,6 +999,8 @@ const inventory = [
     COVER: "BANJO - KAZOOIE",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 7,
@@ -847,6 +1011,8 @@ const inventory = [
     COVER: "F-ZERO X",
     OWNED: "NO",
     "POSTER THEME": "BANJO KAZOOIE / ARTE EN SOBRES",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 7,
@@ -857,6 +1023,8 @@ const inventory = [
     COVER: "F-1 WORLD GRAND PRIX",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 7,
@@ -867,6 +1035,8 @@ const inventory = [
     COVER: "NFL QUARTERBACK CLUB 99",
     OWNED: "NO",
     "POSTER THEME": "DEADLY ARTS / ARTE EN SOBRES",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 7,
@@ -877,6 +1047,8 @@ const inventory = [
     COVER: "POKEMON",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 7,
@@ -887,6 +1059,8 @@ const inventory = [
     COVER: "TUROK 2",
     OWNED: "NO",
     "POSTER THEME": "50 POKÉMON / ARTE EN SOBRES",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 7,
@@ -896,7 +1070,9 @@ const inventory = [
     "OVERALL NUMBER": 85,
     COVER: "ZELDA",
     OWNED: "NO",
-    "POSTER THEME": "YOSHI’S STORY (X2) ",
+    "POSTER THEME": "YOSHI'S STORY (X2) ",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 8,
@@ -907,6 +1083,8 @@ const inventory = [
     COVER: "CASTLEVANIA",
     OWNED: "NO",
     "POSTER THEME": "CALENDARIO TLOZ / ARTE EN SOBRES",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 8,
@@ -917,6 +1095,8 @@ const inventory = [
     COVER: "MARIO PARTY",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 8,
@@ -927,6 +1107,8 @@ const inventory = [
     COVER: "NBA JAM 99",
     OWNED: "NO",
     "POSTER THEME": "MARIO PARTY  / ARTE EN SOBRES",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 8,
@@ -937,6 +1119,8 @@ const inventory = [
     COVER: "SUPER SMASH BROTHERS",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 8,
@@ -947,6 +1131,8 @@ const inventory = [
     COVER: "RAYMAN 2",
     OWNED: "NO",
     "POSTER THEME": "CALENDARIO SUPER SMASH BROS. / ARTE EN SOBRES",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 8,
@@ -957,6 +1143,8 @@ const inventory = [
     COVER: "STAR WARS RACER",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 8,
@@ -967,6 +1155,8 @@ const inventory = [
     COVER: "SHADOW MAN",
     OWNED: "NO",
     "POSTER THEME": "SUPERMAN / ARTE EN SOBRES",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 8,
@@ -977,6 +1167,8 @@ const inventory = [
     COVER: "POKEMON SNAP",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 8,
@@ -987,6 +1179,8 @@ const inventory = [
     COVER: "HYBRID HEAVEN",
     OWNED: "NO",
     "POSTER THEME": "HARRIER 2001 / ARTE EN SOBRES",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 8,
@@ -997,6 +1191,8 @@ const inventory = [
     COVER: "JETFORCE GEMINI",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 8,
@@ -1008,8 +1204,7 @@ const inventory = [
     OWNED: "NO",
     POSTER: "INCLUDED: PAGES 41-48",
     "POSTER THEME": "RE-VOLT",
-    OBSERVATION:
-      "DAÑO EN EL LOMO - ALGUNAS PÁGINAS SUELTAS - PÁG. 87 RECORTADA",
+    OBSERVATION: "-",
     COUNTRY: "MÉXICO",
   },
   {
@@ -1022,7 +1217,7 @@ const inventory = [
     OWNED: "NO",
     POSTER: "-",
     "POSTER THEME": "-",
-    OBSERVATION: "PÁG. 7 RECORTADA",
+    OBSERVATION: "-",
     COUNTRY: "MÉXICO",
   },
   {
@@ -1034,6 +1229,8 @@ const inventory = [
     COVER: "POKEMON - SPECIAL",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 9,
@@ -1252,6 +1449,8 @@ const inventory = [
     COVER: "POKEMON - SPECIAL",
     OWNED: "NO",
     "POSTER THEME": "POKÉMON / MEJORES DIBUJOS POKÉMON DE LOS LECTORES",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 10,
@@ -1393,7 +1592,7 @@ const inventory = [
     OWNED: "NO",
     POSTER: "MISSING: PAGES 41-48",
     "POSTER THEME": "MEGAMAN BATTLE NETWORK 2 / ARTE SOBRES",
-    OBSERVATION: "PÁGINAS RECORTADAS: 9-10, 95-96",
+    OBSERVATION: "-",
     COUNTRY: "MÉXICO",
   },
   {
@@ -1406,7 +1605,7 @@ const inventory = [
     OWNED: "NO",
     POSTER: "-",
     "POSTER THEME": "-",
-    OBSERVATION: "PÁGINA 94 MEDIO SUELTA",
+    OBSERVATION: "-",
     COUNTRY: "MÉXICO",
   },
   {
@@ -1418,6 +1617,8 @@ const inventory = [
     COVER: "ZELDA - SPECIAL",
     OWNED: "NO",
     "POSTER THEME": "THE LEGEND OF ZELDA: OCARINA OF TIME",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 11,
@@ -1494,7 +1695,7 @@ const inventory = [
     OWNED: "NO",
     POSTER: "-",
     "POSTER THEME": "-",
-    OBSERVATION: "CONTRAPORTADA UN POCO ROTA",
+    OBSERVATION: "-",
     COUNTRY: "MÉXICO",
   },
   {
@@ -1664,6 +1865,7 @@ const inventory = [
     POSTER: "-",
     "POSTER THEME": "-",
     OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 12,
@@ -1833,6 +2035,7 @@ const inventory = [
     POSTER: "-",
     "POSTER THEME": "-",
     OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 13,
@@ -1845,6 +2048,7 @@ const inventory = [
     POSTER: "-",
     "POSTER THEME": "PERSONAJES DE NINTENDO Y PORTADAS DEL 2004",
     OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 13,
@@ -2091,6 +2295,7 @@ const inventory = [
     OWNED: "NO",
     "POSTER THEME": "RESIDENT EVIL 0 / RESIDENT EVIL",
     OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 15,
@@ -2102,6 +2307,7 @@ const inventory = [
     OWNED: "NO",
     "POSTER THEME": "RESIDENT EVIL 0 / RESIDENT EVIL",
     OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 15,
@@ -2271,6 +2477,7 @@ const inventory = [
     OWNED: "NO",
     "POSTER THEME": "EVOLUCIÓN MARIO / MARIO GALAXY",
     OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 16,
@@ -2438,6 +2645,7 @@ const inventory = [
     OWNED: "NO",
     "POSTER THEME": "-",
     OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 17,
@@ -2734,6 +2942,8 @@ const inventory = [
     COVER: "SONIC",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 19,
@@ -2744,6 +2954,8 @@ const inventory = [
     COVER: "WARIOWARE D.I.Y.",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 19,
@@ -2754,6 +2966,8 @@ const inventory = [
     COVER: "SUPER MARIO GALAXY 2 - YOSHI",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 19,
@@ -2766,6 +2980,7 @@ const inventory = [
     POSTER: "-",
     "POSTER THEME": "-",
     OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 19,
@@ -2778,6 +2993,7 @@ const inventory = [
     POSTER: "-",
     "POSTER THEME": "-",
     OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 19,
@@ -2790,6 +3006,7 @@ const inventory = [
     POSTER: "-",
     "POSTER THEME": "-",
     OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 19,
@@ -2802,6 +3019,7 @@ const inventory = [
     POSTER: "-",
     "POSTER THEME": "-",
     OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 19,
@@ -2812,6 +3030,8 @@ const inventory = [
     COVER: "NBA JAM",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 19,
@@ -2822,6 +3042,8 @@ const inventory = [
     COVER: "PES 2011 - MESSI",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 19,
@@ -2833,7 +3055,8 @@ const inventory = [
     OWNED: "NO",
     POSTER: "MISSING: CHILEAN VERSION",
     "POSTER THEME": "METROID OTHER M / DONKEY KONG COUNTRY RETURN",
-    OBSERVATION: "DAÑO EN EL LOMO",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 20,
@@ -2845,6 +3068,8 @@ const inventory = [
     OWNED: "NO",
     POSTER: "-",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 20,
@@ -2856,7 +3081,8 @@ const inventory = [
     OWNED: "NO",
     POSTER: "-",
     "POSTER THEME": "-",
-    OBSERVATION: "PEQUEÑO HUECO EN LA PORTADA. PÁG 83-84 UN POCO ROTA",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 20,
@@ -2867,6 +3093,8 @@ const inventory = [
     COVER: "KID ICARUS - NINTENDO 3DS",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 20,
@@ -2878,6 +3106,8 @@ const inventory = [
     OWNED: "NO",
     POSTER: "-",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 20,
@@ -2888,6 +3118,8 @@ const inventory = [
     COVER: "SONIC",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 20,
@@ -2898,6 +3130,8 @@ const inventory = [
     COVER: "ZELDA",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 20,
@@ -2908,6 +3142,8 @@ const inventory = [
     COVER: "E3 - MARIO - WII U",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 20,
@@ -2919,6 +3155,8 @@ const inventory = [
     OWNED: "NO",
     POSTER: "-",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 20,
@@ -2929,6 +3167,8 @@ const inventory = [
     COVER: "STARFOX 64 3D",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 20,
@@ -2940,6 +3180,8 @@ const inventory = [
     OWNED: "NO",
     POSTER: "-",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 20,
@@ -2952,6 +3194,7 @@ const inventory = [
     POSTER: "-",
     "POSTER THEME": "-",
     OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 20,
@@ -2962,6 +3205,8 @@ const inventory = [
     COVER: "ZELDA",
     OWNED: "NO",
     "POSTER THEME": "THE LEGEND OF ZELDA: SKYWARD SWORD",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 21,
@@ -2974,6 +3219,7 @@ const inventory = [
     POSTER: "-",
     "POSTER THEME": "-",
     OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 21,
@@ -2986,6 +3232,7 @@ const inventory = [
     POSTER: "-",
     "POSTER THEME": "-",
     OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 21,
@@ -2996,6 +3243,8 @@ const inventory = [
     COVER: "KID ICARUS",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 21,
@@ -3007,7 +3256,8 @@ const inventory = [
     OWNED: "NO",
     POSTER: "MISSING: CHILEAN VERSION",
     "POSTER THEME": "MARIO KART 7 / POKEPARK 2",
-    OBSERVATION: "FROM CHILE",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 21,
@@ -3018,6 +3268,8 @@ const inventory = [
     COVER: "EPIC MICKEY 2",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 21,
@@ -3029,8 +3281,8 @@ const inventory = [
     OWNED: "NO",
     POSTER: "-",
     "POSTER THEME": "-",
-    OBSERVATION:
-      "PORTADA DAÑADA EN ESQUINA SUPERIOR DERECHA. CONTRAPORTADA CON TROZO FALTANTE",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 21,
@@ -3042,7 +3294,8 @@ const inventory = [
     OWNED: "NO",
     POSTER: "-",
     "POSTER THEME": "-",
-    OBSERVATION: "MISSING PAGES: 19-20",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 21,
@@ -3055,6 +3308,7 @@ const inventory = [
     POSTER: "-",
     "POSTER THEME": "-",
     OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 21,
@@ -3065,6 +3319,8 @@ const inventory = [
     COVER: "METROID",
     OWNED: "NO",
     "POSTER THEME": "METROID",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 21,
@@ -3076,7 +3332,8 @@ const inventory = [
     OWNED: "NO",
     POSTER: "-",
     "POSTER THEME": "-",
-    OBSERVATION: "PORTADA Y PÁG 1-2 ARRUGADAS. PÁG 1-2 FALTA PEDAZO",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 21,
@@ -3089,6 +3346,7 @@ const inventory = [
     POSTER: "-",
     "POSTER THEME": "-",
     OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 21,
@@ -3099,6 +3357,8 @@ const inventory = [
     COVER: "21 ANIVERSARIO - MARIO - YOSHI",
     OWNED: "NO",
     "POSTER THEME": "NEW SUPER MARIO BROS. U / BATMAN ARKHAM CITY",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 22,
@@ -3109,6 +3369,8 @@ const inventory = [
     COVER: "NINJA GAIDEN 3",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 22,
@@ -3121,6 +3383,7 @@ const inventory = [
     POSTER: "-",
     "POSTER THEME": "-",
     OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 22,
@@ -3131,6 +3394,8 @@ const inventory = [
     COVER: "CASTLEVANIA",
     OWNED: "NO",
     "POSTER THEME": "CASTLEVANIA: LORD OF SHADOW / LUIGI'S MANSION DARK MOON",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 22,
@@ -3141,6 +3406,8 @@ const inventory = [
     COVER: "INJUSTICE",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 22,
@@ -3151,6 +3418,8 @@ const inventory = [
     COVER: "DONKEY KONG",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 22,
@@ -3161,6 +3430,8 @@ const inventory = [
     COVER: "ANIMAL CROSSING",
     OWNED: "NO",
     "POSTER THEME": "CALENDARIOS DE ANIMAL CROSSING (JUN 2013 - MAYO 2014)",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 22,
@@ -3171,6 +3442,8 @@ const inventory = [
     COVER: "DISNEY INFINITY",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 22,
@@ -3181,6 +3454,8 @@ const inventory = [
     COVER: "SUPER SMASH BROS.",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 22,
@@ -3191,6 +3466,8 @@ const inventory = [
     COVER: "PIKMIN 3",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 22,
@@ -3201,6 +3478,8 @@ const inventory = [
     COVER: "ZELDA WINDWAKER HD",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 22,
@@ -3211,6 +3490,8 @@ const inventory = [
     COVER: "SONIC LOST WORLD",
     OWNED: "NO",
     "POSTER THEME": "SUPER SMASH BROS. / NEW SUPER LUIGI U",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 22,
@@ -3222,6 +3503,8 @@ const inventory = [
     OWNED: "NO",
     "POSTER THEME":
       "SUPER MARIO 3D WORLD / THE LEGEND OF ZELDA: A LINK BETWEEN WORLDS",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 23,
@@ -3232,6 +3515,8 @@ const inventory = [
     COVER: "MARIO PARTY ISLAND TOUR",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 23,
@@ -3242,6 +3527,8 @@ const inventory = [
     COVER: "ZELDA - PAREJAS LEGENDARIAS",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 23,
@@ -3253,6 +3540,8 @@ const inventory = [
     OWNED: "NO",
     "POSTER THEME":
       "DONKEY KONG COUNTRY TROPICAL FREEZE / MARIO PARTY ISLAND TOUR",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 23,
@@ -3263,6 +3552,8 @@ const inventory = [
     COVER: "YOSHI'S NEW ISLAND - BEBÉ MARIO",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 23,
@@ -3273,6 +3564,8 @@ const inventory = [
     COVER: "EL MUNDO DE SUPER MARIO - SPECIAL",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 23,
@@ -3283,6 +3576,8 @@ const inventory = [
     COVER: "MARIO KART 8",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 23,
@@ -3293,6 +3588,8 @@ const inventory = [
     COVER: "KIRBY TRIPLE DELUXE",
     OWNED: "NO",
     "POSTER THEME": "MARIO KART 8 / YOSHI'S NEW ISLAND",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 23,
@@ -3303,6 +3600,8 @@ const inventory = [
     COVER: "SUPER SMASH BROS. FOR NINTENDO 3DS",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 23,
@@ -3313,6 +3612,8 @@ const inventory = [
     COVER: "DISNEY INFINITY 2.0 - SPIDER MAN",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 23,
@@ -3323,6 +3624,8 @@ const inventory = [
     COVER: "ZELDA - HYRULE WARRIORS",
     OWNED: "NO",
     "POSTER THEME": "MARIO GOLF WORLD TOUR",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 23,
@@ -3333,6 +3636,8 @@ const inventory = [
     COVER: "BAYONETTA 2",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 23,
@@ -3343,6 +3648,8 @@ const inventory = [
     COVER: "EL MUNDO DE BOWSER - SPECIAL",
     OWNED: "NO",
     "POSTER THEME": "MARIO PARTY 10 / MARIO & LUIGI BOWSER'S INSIDE STORY",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 23,
@@ -3353,6 +3660,8 @@ const inventory = [
     COVER: "SUPER SMASH BROS. FOR WII U",
     OWNED: "NO",
     "POSTER THEME": "BAYONETTA 2 / SUPER SMASH BROS. FOR WII U",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 24,
@@ -3363,6 +3672,8 @@ const inventory = [
     COVER: "LA JUNGLA DE DONKEY KONG - SPECIAL",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 24,
@@ -3373,6 +3684,8 @@ const inventory = [
     COVER: "ZELDA MAJORA'S MASK",
     OWNED: "NO",
     "POSTER THEME": "THE LEGEND OF ZELDA: MAJORA'S MASK 3D",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 24,
@@ -3383,6 +3696,8 @@ const inventory = [
     COVER: "MARIO PARTY 10",
     OWNED: "NO",
     "POSTER THEME": "MARIO PARTY 10",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 24,
@@ -3393,6 +3708,8 @@ const inventory = [
     COVER: "SUPER MARIO MAKER",
     OWNED: "NO",
     "POSTER THEME": "SUPER MARIO MAKER / SPLATOON",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 24,
@@ -3403,6 +3720,8 @@ const inventory = [
     COVER: "ZELDA TRIFORCE HEROES",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 24,
@@ -3413,6 +3732,8 @@ const inventory = [
     COVER: "MARIO DORADO FONDO ROJO EDICIÓN ANIVERSARIO",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 25,
@@ -3423,6 +3744,8 @@ const inventory = [
     COVER: "SUPER SMASH BROS. FOR NINTENDO 3DS / FOR WII U - BAYONETTA",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 25,
@@ -3433,6 +3756,8 @@ const inventory = [
     COVER: "METROID PRIME FEDERATION FORCE",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 25,
@@ -3443,6 +3768,8 @@ const inventory = [
     COVER: "KIRBY PLANET ROBOBOT",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 25,
@@ -3453,6 +3780,8 @@ const inventory = [
     COVER: "METROID 30 AÑOS",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 25,
@@ -3463,6 +3792,8 @@ const inventory = [
     COVER: "POKEMON GO",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 25,
@@ -3473,6 +3804,8 @@ const inventory = [
     COVER: "SUPER MARIO MAKER FOR NINTENDO 3DS",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 26,
@@ -3483,6 +3816,8 @@ const inventory = [
     COVER: "MARIO SPORTS SUPERSTARS",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 26,
@@ -3493,6 +3828,8 @@ const inventory = [
     COVER: "MARIO KART 8 DELUXE",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 26,
@@ -3503,6 +3840,8 @@ const inventory = [
     COVER: "SPLATOON 2",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 26,
@@ -3513,6 +3852,8 @@ const inventory = [
     COVER: "MARIO + RABBIDS: KINGDOM BATTLE",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 26,
@@ -3523,6 +3864,8 @@ const inventory = [
     COVER: "MARIO & LUIGI SUPERSTAR SAGA + BOWSER'S MINIONS",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 26,
@@ -3533,6 +3876,8 @@ const inventory = [
     COVER: "SUPER MARIO ODYSSEY",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 27,
@@ -3543,6 +3888,8 @@ const inventory = [
     COVER: "BAYONETTA 2",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 27,
@@ -3553,6 +3900,8 @@ const inventory = [
     COVER: "HYRULE WARRIORS: DEFINITIVE EDITION",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 27,
@@ -3563,6 +3912,8 @@ const inventory = [
     COVER: "MARIO TENNIS ACES",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 27,
@@ -3573,6 +3924,8 @@ const inventory = [
     COVER: "STARLINK: BATTLE FOR ATLAS",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 27,
@@ -3583,6 +3936,8 @@ const inventory = [
     COVER: "LUIGI'S MANSION",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
   {
     "YEAR EDIT": 27,
@@ -3593,6 +3948,8 @@ const inventory = [
     COVER: "SUPER SMASH BROS.: ULTIMATE",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
+    COUNTRY: "MÉXICO",
   },
 ];
 

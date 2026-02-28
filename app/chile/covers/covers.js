@@ -64,7 +64,7 @@ export default function CoversScreen() {
                   await AsyncStorage.setItem("chileDB", JSON.stringify(parsed));
                 } catch (e) {
                   console.warn(
-                    "No se pudo sobrescribir chileDB tras migración:",
+                    "No se pudo sobrescribir chileDB tras migración Year 27:",
                     e,
                   );
                 }
@@ -82,7 +82,66 @@ export default function CoversScreen() {
                 await AsyncStorage.setItem("chileDB", JSON.stringify(parsed));
               } catch (e) {
                 console.warn(
-                  "No se pudo sobrescribir chileDB tras migración:",
+                  "No se pudo sobrescribir chileDB tras migración Year 27:",
+                  e,
+                );
+              }
+            }
+          }
+
+          // Nueva migración: el número OVERALL NUMBER para
+          // { "YEAR EDIT": 19, "YEAR NUMBER": 1 } estaba como "208" (duplicado)
+          // y debe ser "209". Si se corrige, incrementamos en +1
+          // el "OVERALL NUMBER" de todos los objetos posteriores.
+          // Esto además desplaza el error previo del Year 27 al número 304 correcto.
+          if (Array.isArray(parsed)) {
+            const idx = parsed.findIndex(
+              (it) =>
+                String(it["YEAR EDIT"]) === "19" &&
+                String(it["YEAR NUMBER"]) === "1",
+            );
+
+            if (idx !== -1) {
+              const current = parsed[idx]["OVERALL NUMBER"];
+              if (String(current) === "208") {
+                // actualizar el elemento encontrado
+                parsed[idx] = { ...parsed[idx], ["OVERALL NUMBER"]: "209" };
+
+                // desplazar los OVERALL NUMBER posteriores (solo si son numéricos)
+                for (let i = idx + 1; i < parsed.length; i++) {
+                  const val = parsed[i]["OVERALL NUMBER"];
+                  const valStr = String(val);
+                  if (/^\d+$/.test(valStr)) {
+                    parsed[i] = {
+                      ...parsed[i],
+                      ["OVERALL NUMBER"]: String(Number(valStr) + 1),
+                    };
+                  }
+                }
+
+                // persistir la migración en AsyncStorage
+                try {
+                  await AsyncStorage.setItem("chileDB", JSON.stringify(parsed));
+                } catch (e) {
+                  console.warn(
+                    "No se pudo sobrescribir chileDB tras migración Year 19:",
+                    e,
+                  );
+                }
+              }
+            }
+          } else if (parsed && typeof parsed === "object") {
+            if (
+              String(parsed["YEAR EDIT"]) === "19" &&
+              String(parsed["YEAR NUMBER"]) === "1" &&
+              String(parsed["OVERALL NUMBER"]) === "208"
+            ) {
+              parsed["OVERALL NUMBER"] = "209";
+              try {
+                await AsyncStorage.setItem("chileDB", JSON.stringify(parsed));
+              } catch (e) {
+                console.warn(
+                  "No se pudo sobrescribir chileDB tras migración Year 19:",
                   e,
                 );
               }
