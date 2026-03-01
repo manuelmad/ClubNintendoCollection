@@ -3363,7 +3363,7 @@ const inventory = [
     "YEAR DATE": 2013,
     MONTH: "DICIEMBRE",
     "YEAR NUMBER": 12,
-    "OVERALL NUMBER": 255,
+    "OVERALL NUMBER": 256,
     COVER: "SUPER MARIO 3D WORLD",
     OWNED: "NO",
     POSTER: "NO",
