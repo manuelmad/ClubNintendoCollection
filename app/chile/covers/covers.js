@@ -30,125 +30,48 @@ export default function CoversScreen() {
         const parsed = JSON.parse(storedDb);
 
         try {
-          // Corrige el error conocido: el número OVERALL NUMBER para
-          // { "YEAR EDIT": 27, "YEAR NUMBER": 2 } estaba como "303"
-          // y debe ser "304". Si se corrige, incrementamos en +1
-          // el "OVERALL NUMBER" de todos los objetos posteriores
           if (Array.isArray(parsed)) {
-            const idx = parsed.findIndex(
-              (it) =>
-                String(it["YEAR EDIT"]) === "27" &&
-                String(it["YEAR NUMBER"]) === "2",
-            );
+            let changed = false;
+            for (let i = 1; i < parsed.length; i++) {
+              const prev = parsed[i - 1]["OVERALL NUMBER"];
+              const current = parsed[i]["OVERALL NUMBER"];
 
-            if (idx !== -1) {
-              const current = parsed[idx]["OVERALL NUMBER"];
-              if (String(current) === "303") {
-                // actualizar el elemento encontrado
-                parsed[idx] = { ...parsed[idx], ["OVERALL NUMBER"]: "304" };
-
-                // desplazar los OVERALL NUMBER posteriores (solo si son numéricos)
-                for (let i = idx + 1; i < parsed.length; i++) {
-                  const val = parsed[i]["OVERALL NUMBER"];
-                  const valStr = String(val);
-                  if (/^\d+$/.test(valStr)) {
-                    parsed[i] = {
-                      ...parsed[i],
-                      ["OVERALL NUMBER"]: String(Number(valStr) + 1),
-                    };
+              // Solo comparamos y operamos si son valores numéricos.
+              // Ignoramos "SPECIAL", "SPECIAL2", etc.
+              if (/^\d+$/.test(String(prev)) && /^\d+$/.test(String(current))) {
+                if (Number(current) === Number(prev)) {
+                  // Hemos encontrado un duplicado.
+                  // Incrementamos el actual y todos los que le siguen.
+                  for (let j = i; j < parsed.length; j++) {
+                    const val = parsed[j]["OVERALL NUMBER"];
+                    if (/^\d+$/.test(String(val))) {
+                      parsed[j] = {
+                        ...parsed[j],
+                        ["OVERALL NUMBER"]: String(Number(val) + 1),
+                      };
+                    }
                   }
-                }
-
-                // persistir la migración en AsyncStorage
-                try {
-                  await AsyncStorage.setItem("chileDB", JSON.stringify(parsed));
-                } catch (e) {
-                  console.warn(
-                    "No se pudo sobrescribir chileDB tras migración Year 27:",
-                    e,
-                  );
+                  changed = true;
+                  // Una vez corregida la cola, ya no necesitamos seguir buscando duplicados
+                  // basándonos en los valores antiguos.
+                  break;
                 }
               }
             }
-          } else if (parsed && typeof parsed === "object") {
-            // Caso improbable: chileDB es un objeto único
-            if (
-              String(parsed["YEAR EDIT"]) === "27" &&
-              String(parsed["YEAR NUMBER"]) === "2" &&
-              String(parsed["OVERALL NUMBER"]) === "303"
-            ) {
-              parsed["OVERALL NUMBER"] = "304";
+
+            if (changed) {
               try {
                 await AsyncStorage.setItem("chileDB", JSON.stringify(parsed));
               } catch (e) {
                 console.warn(
-                  "No se pudo sobrescribir chileDB tras migración Year 27:",
-                  e,
-                );
-              }
-            }
-          }
-
-          // Nueva migración: el número OVERALL NUMBER para
-          // { "YEAR EDIT": 19, "YEAR NUMBER": 1 } estaba como "208" (duplicado)
-          // y debe ser "209". Si se corrige, incrementamos en +1
-          // el "OVERALL NUMBER" de todos los objetos posteriores.
-          // Esto además desplaza el error previo del Year 27 al número 304 correcto.
-          if (Array.isArray(parsed)) {
-            const idx = parsed.findIndex(
-              (it) =>
-                String(it["YEAR EDIT"]) === "19" &&
-                String(it["YEAR NUMBER"]) === "1",
-            );
-
-            if (idx !== -1) {
-              const current = parsed[idx]["OVERALL NUMBER"];
-              if (String(current) === "208") {
-                // actualizar el elemento encontrado
-                parsed[idx] = { ...parsed[idx], ["OVERALL NUMBER"]: "209" };
-
-                // desplazar los OVERALL NUMBER posteriores (solo si son numéricos)
-                for (let i = idx + 1; i < parsed.length; i++) {
-                  const val = parsed[i]["OVERALL NUMBER"];
-                  const valStr = String(val);
-                  if (/^\d+$/.test(valStr)) {
-                    parsed[i] = {
-                      ...parsed[i],
-                      ["OVERALL NUMBER"]: String(Number(valStr) + 1),
-                    };
-                  }
-                }
-
-                // persistir la migración en AsyncStorage
-                try {
-                  await AsyncStorage.setItem("chileDB", JSON.stringify(parsed));
-                } catch (e) {
-                  console.warn(
-                    "No se pudo sobrescribir chileDB tras migración Year 19:",
-                    e,
-                  );
-                }
-              }
-            }
-          } else if (parsed && typeof parsed === "object") {
-            if (
-              String(parsed["YEAR EDIT"]) === "19" &&
-              String(parsed["YEAR NUMBER"]) === "1" &&
-              String(parsed["OVERALL NUMBER"]) === "208"
-            ) {
-              parsed["OVERALL NUMBER"] = "209";
-              try {
-                await AsyncStorage.setItem("chileDB", JSON.stringify(parsed));
-              } catch (e) {
-                console.warn(
-                  "No se pudo sobrescribir chileDB tras migración Year 19:",
+                  "No se pudo sobrescribir chileDB tras corrección de duplicados:",
                   e,
                 );
               }
             }
           }
         } catch (e) {
-          console.warn("Error aplicando migración a chileDB:", e);
+          console.warn("Error aplicando migración dinámica a chileDB:", e);
         }
 
         setData(parsed);
