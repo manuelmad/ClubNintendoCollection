@@ -29,53 +29,7 @@ export default function CoversScreen() {
       if (storedDb) {
         const parsed = JSON.parse(storedDb);
         setData(parsed);
-        // try {
-        //   const parsed = JSON.parse(storedDb);
 
-        //   const TARGET_KEYS = new Set(["MONTH", "COVER", "OWNED"]);
-
-        //   const migrateItem = (obj) => {
-        //     if (obj == null || typeof obj !== "object") return obj;
-        //     const newObj = {};
-
-        //     Object.keys(obj).forEach((origKey) => {
-        //       const keyTrim = origKey.trim();
-        //       // quitar comillas simples/dobles y comillas tipográficas al principio/fin
-        //       const stripped = keyTrim.replace(/^['"“”‘’]+|['"“”‘’]+$/g, "");
-
-        //       if (TARGET_KEYS.has(stripped) && stripped !== keyTrim) {
-        //         // Solo migrar si el nombre "despojado" coincide con una de las 3 keys
-        //         // y no existe ya la key sin comillas en el objeto original.
-        //         if (!(stripped in obj)) {
-        //           newObj[stripped] = obj[origKey];
-        //         } else {
-        //           // Si ya existe la key sin comillas, conservamos el original con comillas
-        //           newObj[origKey] = obj[origKey];
-        //         }
-        //       } else {
-        //         // Dejar todas las demás keys exactamente como estaban (incluyendo las que contienen comillas)
-        //         newObj[origKey] = obj[origKey];
-        //       }
-        //     });
-
-        //     return newObj;
-        //   };
-
-        //   let normalized = parsed;
-        //   if (Array.isArray(parsed)) normalized = parsed.map(migrateItem);
-        //   else if (typeof parsed === "object") normalized = migrateItem(parsed);
-
-        //   try {
-        //     await AsyncStorage.setItem("mexicoDB", JSON.stringify(normalized));
-        //   } catch (e) {
-        //     console.warn("No se pudo sobrescribir mexicoDB tras migración:", e);
-        //   }
-
-        //   setData(normalized);
-        // } catch (e) {
-        //   console.warn("Error parseando mexicoDB:", e);
-        //   setData(inventory);
-        // }
       }
     };
     loadData();
