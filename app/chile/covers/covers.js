@@ -37,23 +37,27 @@ export default function CoversScreen() {
               const current = parsed[i]["OVERALL NUMBER"];
 
               // Solo comparamos y operamos si son valores numéricos.
-              // Ignoramos "SPECIAL", "SPECIAL2", etc.
               if (/^\d+$/.test(String(prev)) && /^\d+$/.test(String(current))) {
                 if (Number(current) === Number(prev)) {
-                  // Hemos encontrado un duplicado.
-                  // Incrementamos el actual y todos los que le siguen.
-                  for (let j = i; j < parsed.length; j++) {
-                    const val = parsed[j]["OVERALL NUMBER"];
-                    if (/^\d+$/.test(String(val))) {
-                      parsed[j] = {
-                        ...parsed[j],
-                        ["OVERALL NUMBER"]: String(Number(val) + 1),
-                      };
-                    }
+                  // Hemos encontrado un duplicado. Incrementamos este y
+                  // evaluamos si se genera un nuevo duplicado con el siguiente (efecto dominó).
+                  let k = i;
+                  while (
+                    k < parsed.length &&
+                    /^\d+$/.test(String(parsed[k]["OVERALL NUMBER"])) &&
+                    (k === i ||
+                      Number(parsed[k]["OVERALL NUMBER"]) ===
+                      Number(parsed[k - 1]["OVERALL NUMBER"]))
+                  ) {
+                    const val = parsed[k]["OVERALL NUMBER"];
+                    parsed[k] = {
+                      ...parsed[k],
+                      ["OVERALL NUMBER"]: String(Number(val) + 1),
+                    };
+                    k++;
+                    changed = true;
                   }
-                  changed = true;
-                  // Una vez corregida la cola, ya no necesitamos seguir buscando duplicados
-                  // basándonos en los valores antiguos.
+                  // Tras corregir la cadena de duplicados (efecto dominó), salimos del bucle principal.
                   break;
                 }
               }
@@ -64,7 +68,7 @@ export default function CoversScreen() {
                 await AsyncStorage.setItem("chileDB", JSON.stringify(parsed));
               } catch (e) {
                 console.warn(
-                  "No se pudo sobrescribir chileDB tras corrección de duplicados:",
+                  "No se pudo sobrescribir chileDB tras corrección de duplicados (ripple):",
                   e,
                 );
               }
