@@ -8,6 +8,7 @@ const inventory = [
     COVER: "SUPER MARIO WORLD",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -19,6 +20,7 @@ const inventory = [
     COVER: "SUPER MARIO BROS. 3",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -30,6 +32,7 @@ const inventory = [
     COVER: "BART - LOS SIMPSONS",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -41,6 +44,7 @@ const inventory = [
     COVER: "F-ZERO",
     OWNED: "NO",
     "POSTER THEME": "DOUBLE DRAGON III",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -52,6 +56,7 @@ const inventory = [
     COVER: "TINY TOONS",
     OWNED: "NO",
     "POSTER THEME": "EXTRA: CUBITIPS SUPER MARIO BROS. 3",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -63,6 +68,7 @@ const inventory = [
     COVER: "THE FLINSTONES - PICAPIEDRAS",
     OWNED: "NO",
     "POSTER THEME": "EXTRA: CUBITIPS BATMAN RETURN OF THE JOKER",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -74,6 +80,7 @@ const inventory = [
     COVER: "STREET FIGHTER II",
     OWNED: "NO",
     "POSTER THEME": "STREET FIGHTER II / EXTRA: CUBITIPS SUPER MARIO WORLD",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -85,6 +92,7 @@ const inventory = [
     COVER: "MARIO PAINT",
     OWNED: "NO",
     "POSTER THEME": "FELIX THE CAT / AXELAY",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -96,6 +104,7 @@ const inventory = [
     COVER: "DEATH VALLEY RALLY - COYOTE - CORRECAMINOS",
     OWNED: "NO",
     "POSTER THEME": "CONTRA / SUPER MARIO KART",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -107,6 +116,7 @@ const inventory = [
     COVER: "STARFOX",
     OWNED: "NO",
     "POSTER THEME": "TMNT TURTLES IN TIME",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -118,6 +128,7 @@ const inventory = [
     COVER: "BATMAN",
     OWNED: "NO",
     "POSTER THEME": "ADVENTURE ISLAND 3",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -129,6 +140,7 @@ const inventory = [
     COVER: "TINY TOONS",
     OWNED: "NO",
     "POSTER THEME": "BATMAN RETURNS / CONTRA III",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -140,6 +152,7 @@ const inventory = [
     COVER: "PRINCE OF PERSIA",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -151,6 +164,7 @@ const inventory = [
     COVER: "MORTAL KOMBAT",
     OWNED: "NO",
     "POSTER THEME": "CYBERNATOR",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -162,6 +176,7 @@ const inventory = [
     COVER: "STREET FIGHTER II TURBO",
     OWNED: "NO",
     "POSTER THEME": "CALENDARIO 1994 / STARFOX",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -173,6 +188,7 @@ const inventory = [
     COVER: "S.O.S. - SPECIAL",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -184,6 +200,7 @@ const inventory = [
     COVER: "BATTLETOADS",
     OWNED: "NO",
     "POSTER THEME": "RUN SABER",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -195,6 +212,7 @@ const inventory = [
     COVER: "FINAL FIGHT 2",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -206,6 +224,7 @@ const inventory = [
     COVER: "MEGAMAN X",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -217,6 +236,7 @@ const inventory = [
     COVER: "METROID",
     OWNED: "NO",
     "POSTER THEME": "MEGAMAN X",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -228,6 +248,7 @@ const inventory = [
     COVER: "NBA JAM",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -239,6 +260,7 @@ const inventory = [
     COVER: "JURASSIC PARK",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -250,6 +272,7 @@ const inventory = [
     COVER: "MEGA MAN SOCCER",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -261,6 +284,7 @@ const inventory = [
     COVER: "STUNT RACE FX",
     OWNED: "NO",
     "POSTER THEME": "STREET FIGHTER II TURBO / KING OF DRAGONS",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -273,6 +297,7 @@ const inventory = [
     OWNED: "NO",
     POSTER: "MISSING: PAGES 29-36",
     "POSTER THEME": "SPEEDY GONZALES LOS GATOS BANDIDOS / SUPER METROID",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -284,6 +309,7 @@ const inventory = [
     COVER: "ALIEN VS. PREDATOR - STUNT RACE FX - ITCHY & SCRATCHY",
     OWNED: "NO",
     "POSTER THEME": "ALIEN VS. PREDATOR - STUNT RACE FX - ITCHY & SCRATCHY",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -297,7 +323,7 @@ const inventory = [
     POSTER: "MISSING: PAGES 29-36",
     "POSTER THEME":
       "SUPER BOMBERMAN 2 - SUPER ADVENTURE ISLAND 2 - DONKEY KONG COUNTRY / LETHAL ENFORCERS",
-    OBSERVATION: "PÁGINA CENTRAL SUELTA",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -310,6 +336,7 @@ const inventory = [
     OWNED: "NO",
     POSTER: "MISSING: PAGES 31-34",
     "POSTER THEME": "DONKEY KONG COUNTRY / DARKSTALKERS",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -322,6 +349,7 @@ const inventory = [
     OWNED: "NO",
     POSTER: "MISSING: PAGES 29-36",
     "POSTER THEME": "CALENDARIO 1995",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -334,6 +362,7 @@ const inventory = [
     OWNED: "NO",
     POSTER: "MISSING: PAGES 29-37",
     "POSTER THEME": "MORTAL KOMBAT II / MAXIMUM CARNAGE",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -345,6 +374,7 @@ const inventory = [
     COVER: "KILLER INSTINCT",
     OWNED: "NO",
     "POSTER THEME": "AERO THE ACRO-BAT 2 / X-MEN MUTAN APOCALYPSE",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -357,6 +387,7 @@ const inventory = [
     OWNED: "NO",
     POSTER: "MISSING: PAGES 31-34",
     "POSTER THEME": "FATAL FURY",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -369,6 +400,7 @@ const inventory = [
     OWNED: "NO",
     POSTER: "MISSING: PAGES 29-36",
     "POSTER THEME": "FX FIGHTER / SPIDER-MAN",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -380,6 +412,7 @@ const inventory = [
     COVER: "MEGAMAN X2",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -391,6 +424,7 @@ const inventory = [
     COVER: "CLAYFIGHTER 2",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -403,6 +437,7 @@ const inventory = [
     OWNED: "NO",
     POSTER: "-",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -414,6 +449,7 @@ const inventory = [
     COVER: "POWER RANGERS",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -426,6 +462,7 @@ const inventory = [
     OWNED: "NO",
     POSTER: "-",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -438,7 +475,7 @@ const inventory = [
     OWNED: "NO",
     POSTER: "-",
     "POSTER THEME": "-",
-    OBSERVATION: "PÁGINA CENTRAL SUELTA",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -450,6 +487,7 @@ const inventory = [
     COVER: "MORTAL KOMBAT 3",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -461,6 +499,7 @@ const inventory = [
     COVER: "DIDDY KONG'S QUEST",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -472,6 +511,7 @@ const inventory = [
     COVER: "MARIO - NINTENDO 64 - ULTRA 64",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -483,6 +523,7 @@ const inventory = [
     COVER: "SUPER MARIO RPG",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -494,6 +535,7 @@ const inventory = [
     COVER: "DRAGON BALL",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -505,6 +547,7 @@ const inventory = [
     COVER: "KILLER INSTINCT 2",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -516,6 +559,7 @@ const inventory = [
     COVER: "TOY STORY",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -527,6 +571,7 @@ const inventory = [
     COVER: "STREET FIGHTER ZERO 2",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -538,6 +583,7 @@ const inventory = [
     COVER: "SUPER MARIO 64",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -549,6 +595,7 @@ const inventory = [
     COVER: "KEN GRIIFEY JR'S WINNING RUN",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -561,6 +608,7 @@ const inventory = [
     OWNED: "NO",
     POSTER: "-",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -573,6 +621,7 @@ const inventory = [
     OWNED: "NO",
     POSTER: "-",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -584,6 +633,7 @@ const inventory = [
     COVER: "MORTAL KOMBAT TRILOGY",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -595,6 +645,7 @@ const inventory = [
     COVER: "KILLER INSTINCT GOLD",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -606,6 +657,7 @@ const inventory = [
     COVER: "MARIO KART 64",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -618,6 +670,7 @@ const inventory = [
     OWNED: "NO",
     POSTER: "-",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -629,6 +682,7 @@ const inventory = [
     COVER: "THE KING OF FIGHTERS 95",
     OWNED: "NO",
     "POSTER THEME": "PILOTWINGS 64 / ULTIMATE MK3 - MK TRILOGY",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -641,6 +695,7 @@ const inventory = [
     OWNED: "NO",
     POSTER: "-",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -652,6 +707,7 @@ const inventory = [
     COVER: "BLAST CORPS",
     OWNED: "NO",
     "POSTER THEME": "STREET FIGHTER ALPHA 2 / KIRBY STAR STACKER",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -663,6 +719,7 @@ const inventory = [
     COVER: "STARFOX 64",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -674,6 +731,7 @@ const inventory = [
     COVER: "CLAYFIGHTER 63 1/3",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -685,6 +743,7 @@ const inventory = [
     COVER: "BANJO - KAZOOIE",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -709,6 +768,7 @@ const inventory = [
     COVER: "SAN FRANCISCO RUSH EXTREME RACING",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -720,6 +780,7 @@ const inventory = [
     COVER: "DIDDY KONG RACING",
     OWNED: "NO",
     "POSTER THEME": "GOLDENEYE 007 / MARIO KART 64",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -731,6 +792,7 @@ const inventory = [
     COVER: "BOMBERMAN 64",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -742,6 +804,7 @@ const inventory = [
     COVER: "ZELDA OCARINE",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -753,6 +816,7 @@ const inventory = [
     COVER: "YOSHI'S STORY",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -778,7 +842,7 @@ const inventory = [
     OWNED: "NO",
     POSTER: "-",
     "POSTER THEME": "-",
-    OBSERVATION: "PÁGINAS 1-2 FALTA PEDAZO",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -790,6 +854,7 @@ const inventory = [
     COVER: "WORLD CUP 98",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -827,6 +892,7 @@ const inventory = [
     COVER: "ENCICLOPEDIA - SPECIAL",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -838,6 +904,7 @@ const inventory = [
     COVER: "F-1 WORLD GRAND PRIX",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -875,6 +942,7 @@ const inventory = [
     COVER: "ZELDA OCARINA",
     OWNED: "NO",
     "POSTER THEME": "THE LEGEND OF ZELDA: OCARINA OF TIME",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -886,6 +954,7 @@ const inventory = [
     COVER: "TUROK 2",
     OWNED: "NO",
     "POSTER THEME": "YOSHI'S STORY",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -898,6 +967,7 @@ const inventory = [
     OWNED: "NO",
     POSTER: "MISSING: PAGES 29-36",
     "POSTER THEME": "DEADLY ARTS / POKEMON",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -909,6 +979,7 @@ const inventory = [
     COVER: "MARIO PARTY",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -920,6 +991,7 @@ const inventory = [
     COVER: "NBA INTHE ZONE 99",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -931,6 +1003,7 @@ const inventory = [
     COVER: "SUPER SMASH BROTHERS",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -942,6 +1015,7 @@ const inventory = [
     COVER: "RAYMAN 2",
     OWNED: "NO",
     "POSTER THEME": "-",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -953,6 +1027,7 @@ const inventory = [
     COVER: "STAR WARS RACER",
     OWNED: "NO",
     "POSTER THEME": "STAR WARS RACER",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -964,6 +1039,7 @@ const inventory = [
     COVER: "SHADOW MAN",
     OWNED: "NO",
     "POSTER THEME": "SHADOW MAN",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -988,6 +1064,7 @@ const inventory = [
     COVER: "HYBRID HEAVEN",
     OWNED: "NO",
     "POSTER THEME": "HYBRID HEAVEN",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -999,6 +1076,7 @@ const inventory = [
     COVER: "JETFORCE GEMINI",
     OWNED: "NO",
     "POSTER THEME": "JETFORCE GEMINI",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
   {
@@ -1024,7 +1102,7 @@ const inventory = [
     OWNED: "NO",
     POSTER: "-",
     "POSTER THEME": "-",
-    OBSERVATION: "PÁG. 7 RECORTADA",
+    OBSERVATION: "-",
     COUNTRY: "ARGENTINA",
   },
 ];
