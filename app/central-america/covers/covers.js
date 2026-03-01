@@ -26,11 +26,56 @@ export default function CoversScreen() {
       // Esta línea la uso para limpiar la base de datos almacenada en AsyncStorage durante las pruebas
       //await AsyncStorage.removeItem('centroAmericaDB')
       const storedDb = await AsyncStorage.getItem("centroAmericaDB");
-      if (storedDb) {
-        const parsed = JSON.parse(storedDb);
-        setData(parsed);
+      let workingData = storedDb ? JSON.parse(storedDb) : [...inventory];
 
+      try {
+        if (Array.isArray(workingData)) {
+          const idx = workingData.findIndex(
+            (it) =>
+              String(it["YEAR EDIT"]) === "19" &&
+              String(it["YEAR NUMBER"]) === "3",
+          );
+
+          if (idx !== -1) {
+            const current = workingData[idx]["OVERALL NUMBER"];
+            if (String(current) === "220") {
+              // Corregir el elemento inicial
+              workingData[idx] = { ...workingData[idx], ["OVERALL NUMBER"]: 210 };
+
+              // Re-asignar secuencialmente todos los posteriores
+              let nextNumber = 211;
+              for (let i = idx + 1; i < workingData.length; i++) {
+                const item = workingData[i];
+                // Solo re-secuenciamos si es un número (evitar SPECIAL)
+                if (/^\d+$/.test(String(item["OVERALL NUMBER"]))) {
+                  workingData[i] = {
+                    ...item,
+                    ["OVERALL NUMBER"]: nextNumber,
+                  };
+                  nextNumber++;
+                }
+              }
+
+              // Persistir los cambios
+              try {
+                await AsyncStorage.setItem(
+                  "centroAmericaDB",
+                  JSON.stringify(workingData),
+                );
+              } catch (e) {
+                console.warn(
+                  "No se pudo persistir la migración de Centroamérica:",
+                  e,
+                );
+              }
+            }
+          }
+        }
+      } catch (e) {
+        console.warn("Error aplicando migración a centroAmericaDB:", e);
       }
+
+      setData(workingData);
     };
     loadData();
   }, []);
