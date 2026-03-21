@@ -73,7 +73,7 @@ const inventory = [
     COVER: "SUPER MARIO BROS. - BOWSER",
     OWNED: "NO",
     POSTER: "NO",
-    "POSTER THEME": "-",
+    "POSTER THEME": "EXTRA: CUBITIPS SUPER MARIO BROS. 3",
     OBSERVATION: "-",
     COUNTRY: "COLOMBIA",
   },
