@@ -28,6 +28,36 @@ export default function CoversScreen() {
       const storedDb = await AsyncStorage.getItem("venezuelaDB");
       if (storedDb) {
         const parsed = JSON.parse(storedDb);
+
+        // Código para corregir el POSTER THEME
+        try {
+          let themeChanged = false;
+          parsed.forEach((item, index) => {
+            const invItem = inventory.find(
+              (inv) =>
+                inv["OVERALL NUMBER"] == item["OVERALL NUMBER"] &&
+                inv["YEAR EDIT"] == item["YEAR EDIT"],
+            );
+            if (invItem && item["POSTER THEME"] !== invItem["POSTER THEME"]) {
+              parsed[index]["POSTER THEME"] = invItem["POSTER THEME"];
+              themeChanged = true;
+            }
+          });
+
+          if (themeChanged) {
+            try {
+              await AsyncStorage.setItem("venezuelaDB", JSON.stringify(parsed));
+            } catch (e) {
+              console.warn(
+                "No se pudo sobrescribir venezuelaDB tras corrección de POSTER THEME:",
+                e,
+              );
+            }
+          }
+        } catch (e) {
+          console.warn("Error synchronizing POSTER THEME:", e);
+        }
+
         setData(parsed);
 
       }
