@@ -1,3 +1,4 @@
+import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { Link, useLocalSearchParams } from "expo-router";
 import { useEffect, useState } from "react";
@@ -129,6 +130,29 @@ export default function CoversScreen() {
         </Text>
         <Pressable
           style={[
+            styles.buttonPoster,
+            item.POSTER !== "YES"
+              ? { backgroundColor: "#f0394d" }
+              : { backgroundColor: "#006845" },
+          ]}
+          onPress={async () => {
+            const newData = data.map((el) => {
+              if (el["OVERALL NUMBER"] === item["OVERALL NUMBER"]) {
+                return { ...el, POSTER: el.POSTER !== "YES" ? "YES" : "NO" };
+              }
+
+              return el;
+            });
+            setData(newData);
+            await AsyncStorage.setItem("venezuelaDB", JSON.stringify(newData));
+          }}
+        >
+          <Text style={styles.buttonText}>
+            <FontAwesome6 name="sheet-plastic" size={24} color="white" />
+          </Text>
+        </Pressable>
+        <Pressable
+          style={[
             styles.button,
             item.OWNED === "NO"
               ? { backgroundColor: "#f0394d" }
@@ -198,6 +222,29 @@ export default function CoversScreen() {
           Poster:{" "}
           {item["POSTER THEME"] == "-" ? "No incluye" : item["POSTER THEME"]}
         </Text>
+        <Pressable
+          style={[
+            styles.buttonPoster,
+            item.POSTER !== "YES"
+              ? { backgroundColor: "#f0394d" }
+              : { backgroundColor: "#006845" },
+          ]}
+          onPress={async () => {
+            const newData = data.map((el) => {
+              if (el.COVER === item.COVER) {
+                return { ...el, POSTER: el.POSTER !== "YES" ? "YES" : "NO" };
+              }
+
+              return el;
+            });
+            setData(newData);
+            await AsyncStorage.setItem("venezuelaDB", JSON.stringify(newData));
+          }}
+        >
+          <Text style={styles.buttonText}>
+            <FontAwesome6 name="sheet-plastic" size={24} color="white" />
+          </Text>
+        </Pressable>
         <Pressable
           style={[
             styles.button,
@@ -345,7 +392,7 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
   },
   button: {
-    width: 140,
+    width: 60,
     height: 30,
     marginTop: 10,
     borderRadius: 5,
@@ -354,6 +401,18 @@ const styles = StyleSheet.create({
     paddingVertical: 3,
     position: "absolute",
     bottom: 10,
+  },
+  buttonPoster: {
+    width: 30,
+    height: 30,
+    marginTop: 10,
+    borderRadius: 5,
+    justifyContent: "center",
+    alignItems: "center",
+    paddingVertical: 3,
+    position: "absolute",
+    bottom: 10,
+    left: 10,
   },
   buttonText: {
     color: "#fff",
