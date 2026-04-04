@@ -88,6 +88,36 @@ export default function CoversScreen() {
           console.warn("Error synchronizing COVER:", e);
         }
 
+        // Código para corregir el YEAR NUMBER
+        try {
+          let yearNumberChanged = false;
+          parsed.forEach((item, index) => {
+            const invItem = inventory.find(
+              (inv) =>
+                inv["OVERALL NUMBER"] == item["OVERALL NUMBER"] &&
+                inv["YEAR EDIT"] == item["YEAR EDIT"],
+            );
+            if (invItem && item["YEAR NUMBER"] !== invItem["YEAR NUMBER"]) {
+              parsed[index]["YEAR NUMBER"] = invItem["YEAR NUMBER"];
+              yearNumberChanged = true;
+            }
+          });
+
+          if (yearNumberChanged) {
+            try {
+              await AsyncStorage.setItem("mexicoDB", JSON.stringify(parsed));
+            } catch (e) {
+              console.warn(
+                "No se pudo sobrescribir mexicoDB tras corrección de YEAR NUMBER:",
+                e,
+              );
+            }
+          }
+        } catch (e) {
+          console.warn("Error synchronizing YEAR NUMBER:", e);
+        }
+
+
 
         setData(parsed);
 
