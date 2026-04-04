@@ -59,6 +59,36 @@ export default function CoversScreen() {
           console.warn("Error synchronizing POSTER THEME:", e);
         }
 
+        // Código para corregir el COVER
+        try {
+          let coverChanged = false;
+          parsed.forEach((item, index) => {
+            const invItem = inventory.find(
+              (inv) =>
+                inv["OVERALL NUMBER"] == item["OVERALL NUMBER"] &&
+                inv["YEAR EDIT"] == item["YEAR EDIT"],
+            );
+            if (invItem && item["COVER"] !== invItem["COVER"]) {
+              parsed[index]["COVER"] = invItem["COVER"];
+              coverChanged = true;
+            }
+          });
+
+          if (coverChanged) {
+            try {
+              await AsyncStorage.setItem("mexicoDB", JSON.stringify(parsed));
+            } catch (e) {
+              console.warn(
+                "No se pudo sobrescribir mexicoDB tras corrección de COVER:",
+                e,
+              );
+            }
+          }
+        } catch (e) {
+          console.warn("Error synchronizing COVER:", e);
+        }
+
+
         setData(parsed);
 
       }
