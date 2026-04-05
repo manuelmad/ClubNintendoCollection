@@ -9,6 +9,9 @@ import {
   StyleSheet,
   Text,
   View,
+  Modal,
+  TextInput,
+  TouchableOpacity,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import inventory from "../inventory";
@@ -21,6 +24,10 @@ export default function CoversScreen() {
   const { year } = useLocalSearchParams();
   const { country } = useLocalSearchParams();
   const [data, setData] = useState(inventory);
+  const [modalVisible, setModalVisible] = useState(false);
+  const [selectedItem, setSelectedItem] = useState(null);
+  const [selectedImage, setSelectedImage] = useState(null);
+  const [observationText, setObservationText] = useState("");
 
   useEffect(() => {
     const loadData = async () => {
@@ -117,14 +124,29 @@ export default function CoversScreen() {
           console.warn("Error synchronizing YEAR NUMBER:", e);
         }
 
-
-
         setData(parsed);
 
       }
     };
     loadData();
   }, []);
+
+  const saveObservation = async () => {
+    if (selectedItem) {
+      const newData = data.map((el) => {
+        if (
+          el["OVERALL NUMBER"] === selectedItem["OVERALL NUMBER"] &&
+          el["YEAR EDIT"] === selectedItem["YEAR EDIT"]
+        ) {
+          return { ...el, OBSERVATION: observationText || "-" };
+        }
+        return el;
+      });
+      setData(newData);
+      await AsyncStorage.setItem("mexicoDB", JSON.stringify(newData));
+      setModalVisible(false);
+    }
+  };
 
   // Filtrar el inventario por el año seleccionado
   const filteredData = data.filter(
@@ -234,6 +256,26 @@ export default function CoversScreen() {
             {item.OWNED === "NO" ? "NO" : "SÍ"}
           </Text>
         </Pressable>
+        <Pressable
+          style={[
+            styles.buttonObservation,
+            item.OBSERVATION === "-" || !item.OBSERVATION
+              ? { backgroundColor: "#f0394d" }
+              : { backgroundColor: "#006845" },
+          ]}
+          onPress={() => {
+            setSelectedItem(item);
+            setObservationText(
+              item.OBSERVATION === "-" ? "" : item.OBSERVATION || "",
+            );
+            setSelectedImage(imageSource);
+            setModalVisible(true);
+          }}
+        >
+          <Text style={styles.buttonText}>
+            <FontAwesome6 name="commenting" size={24} color="white" />
+          </Text>
+        </Pressable>
       </View>
     );
   };
@@ -328,6 +370,26 @@ export default function CoversScreen() {
             {item.OWNED === "NO" ? "NO" : "SÍ"}
           </Text>
         </Pressable>
+        <Pressable
+          style={[
+            styles.buttonObservation,
+            item.OBSERVATION === "-" || !item.OBSERVATION
+              ? { backgroundColor: "#f0394d" }
+              : { backgroundColor: "#006845" },
+          ]}
+          onPress={() => {
+            setSelectedItem(item);
+            setObservationText(
+              item.OBSERVATION === "-" ? "" : item.OBSERVATION || "",
+            );
+            setSelectedImage(imageSource);
+            setModalVisible(true);
+          }}
+        >
+          <Text style={styles.buttonText}>
+            <FontAwesome6 name="commenting" size={24} color="white" />
+          </Text>
+        </Pressable>
       </View>
     );
   };
@@ -358,6 +420,81 @@ export default function CoversScreen() {
           columnWrapperStyle={styles.row}
         />
       )}
+
+      <Modal
+        animationType="slide"
+        transparent={true}
+        visible={modalVisible}
+        onRequestClose={() => setModalVisible(false)}
+      >
+        <View style={styles.modalContainer}>
+          <View style={styles.modalContent}>
+            {selectedItem && (
+              <>
+                <Text style={styles.modalTitle}>Detalles de la Revista</Text>
+
+                {selectedImage ? (
+                  <Image
+                    source={selectedImage}
+                    style={styles.modalImage}
+                    resizeMode="contain"
+                  />
+                ) : (
+                  <View style={[styles.modalImage, styles.placeholder]}>
+                    <Text style={styles.placeholderText}>No Image</Text>
+                  </View>
+                )}
+
+                <Text style={styles.modalText}>
+                  #{selectedItem["OVERALL NUMBER"]}
+                </Text>
+
+                {selectedItem["YEAR EDIT"] && selectedItem["YEAR NUMBER"] && (
+                  <Text style={styles.modalText}>
+                    Año {selectedItem["YEAR EDIT"]} No.{" "}
+                    {selectedItem["YEAR NUMBER"]}
+                  </Text>
+                )}
+
+                <Text style={styles.modalText}>
+                  {selectedItem.MONTH}-{selectedItem["YEAR DATE"]}
+                </Text>
+
+                <Text style={styles.modalText}>
+                  Poster:{" "}
+                  {selectedItem["POSTER THEME"] === "-"
+                    ? "No incluye"
+                    : selectedItem["POSTER THEME"]}
+                </Text>
+
+                <TextInput
+                  style={styles.input}
+                  placeholder="Escribe una observación..."
+                  placeholderTextColor="#888"
+                  value={observationText}
+                  onChangeText={setObservationText}
+                  multiline
+                />
+
+                <View style={styles.modalButtons}>
+                  <TouchableOpacity
+                    style={styles.saveButton}
+                    onPress={saveObservation}
+                  >
+                    <Text style={styles.buttonText}>Guardar</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                    style={styles.cancelButton}
+                    onPress={() => setModalVisible(false)}
+                  >
+                    <Text style={styles.buttonText}>Cancelar</Text>
+                  </TouchableOpacity>
+                </View>
+              </>
+            )}
+          </View>
+        </View>
+      </Modal>
 
       <View style={styles.footer}>
         <Link href="/mexico/mexico" style={styles.link}>
@@ -474,8 +611,85 @@ const styles = StyleSheet.create({
     bottom: 10,
     left: 10,
   },
+  buttonObservation: {
+    width: 30,
+    height: 30,
+    marginTop: 10,
+    borderRadius: 5,
+    justifyContent: "center",
+    alignItems: "center",
+    paddingVertical: 3,
+    position: "absolute",
+    bottom: 10,
+    right: 10,
+  },
   buttonText: {
     color: "#fff",
     fontWeight: "bold",
+  },
+  modalContainer: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "rgba(0, 0, 0, 0.8)",
+  },
+  modalContent: {
+    width: "85%",
+    backgroundColor: "#292e38",
+    borderRadius: 20,
+    padding: 20,
+    alignItems: "center",
+    borderWidth: 2,
+    borderColor: "#478d01",
+  },
+  modalTitle: {
+    fontSize: 20,
+    fontWeight: "bold",
+    color: "#fff",
+    marginBottom: 15,
+  },
+  modalText: {
+    fontSize: 16,
+    color: "#rgb(164, 163, 163)",
+    textAlign: "center",
+    marginBottom: 5,
+  },
+  input: {
+    width: "100%",
+    height: 100,
+    borderColor: "#478d01",
+    borderWidth: 1,
+    borderRadius: 10,
+    marginTop: 20,
+    padding: 10,
+    color: "#fff",
+    textAlignVertical: "top",
+    backgroundColor: "#181c23",
+  },
+  modalButtons: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    width: "100%",
+    marginTop: 25,
+  },
+  saveButton: {
+    backgroundColor: "#006845",
+    padding: 12,
+    borderRadius: 8,
+    width: "45%",
+    alignItems: "center",
+  },
+  cancelButton: {
+    backgroundColor: "#f0394d",
+    padding: 12,
+    borderRadius: 8,
+    width: "45%",
+    alignItems: "center",
+  },
+  modalImage: {
+    width: 100,
+    height: 150,
+    marginBottom: 15,
+    borderRadius: 5,
   },
 });
