@@ -116,13 +116,46 @@ export default function CoversScreen() {
               await AsyncStorage.setItem("mexicoDB", JSON.stringify(parsed));
             } catch (e) {
               console.warn(
-                "No se pudo sobrescribir mexicoDB tras corrección de YEAR NUMBER:",
+                "No se pudo sobrescribir mexicoDB tras corregcción de YEAR NUMBER:",
                 e,
               );
             }
           }
         } catch (e) {
           console.warn("Error synchronizing YEAR NUMBER:", e);
+        }
+
+        // Código para agregar elementos faltantes (solo COMPILATIONS)
+        try {
+          let itemsAdded = false;
+          const targetCompilations = ["COMPILATION", "COMPILATION2", "COMPILATION3", "COMPILATION4"];
+
+          inventory.forEach((invItem) => {
+            if (targetCompilations.includes(invItem["OVERALL NUMBER"])) {
+              const exists = parsed.some(
+                (item) =>
+                  item["OVERALL NUMBER"] == invItem["OVERALL NUMBER"] &&
+                  item["YEAR EDIT"] == invItem["YEAR EDIT"],
+              );
+              if (!exists) {
+                parsed.push(invItem);
+                itemsAdded = true;
+              }
+            }
+          });
+
+          if (itemsAdded) {
+            try {
+              await AsyncStorage.setItem("mexicoDB", JSON.stringify(parsed));
+            } catch (e) {
+              console.warn(
+                "No se pudo sobrescribir mexicoDB tras agregar elementos faltantes:",
+                e,
+              );
+            }
+          }
+        } catch (e) {
+          console.warn("Error synchronizing missing items:", e);
         }
 
         setData(parsed);
