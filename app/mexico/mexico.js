@@ -96,12 +96,23 @@ export default function MexicoScreen() {
             <Link
               href={{
                 pathname: "/mexico/covers/covers",
-                params: { country: country },
+                params: { country: country, type: "special" },
               }}
               asChild
             >
               <Pressable style={styles.card}>
                 <Text style={styles.text}>Especiales</Text>
+              </Pressable>
+            </Link>
+            <Link
+              href={{
+                pathname: "/mexico/covers/covers",
+                params: { country: country, type: "compilation" },
+              }}
+              asChild
+            >
+              <Pressable style={styles.card}>
+                <Text style={[styles.text, { fontSize: 17 }]}>Recopilatorios</Text>
               </Pressable>
             </Link>
           </View>

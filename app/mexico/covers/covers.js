@@ -5,13 +5,13 @@ import { useEffect, useState } from "react";
 import {
   FlatList,
   Image,
+  Modal,
   Pressable,
   StyleSheet,
   Text,
-  View,
-  Modal,
   TextInput,
   TouchableOpacity,
+  View,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import inventory from "../inventory";
@@ -23,6 +23,7 @@ const images = require.context("../images", true, /\.jpg$/);
 export default function CoversScreen() {
   const { year } = useLocalSearchParams();
   const { country } = useLocalSearchParams();
+  const { type } = useLocalSearchParams();
   const [data, setData] = useState(inventory);
   const [modalVisible, setModalVisible] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
@@ -161,6 +162,15 @@ export default function CoversScreen() {
     (item) =>
       item["OVERALL NUMBER"] == "SPECIAL" ||
       item["OVERALL NUMBER"] == "SPECIAL2",
+  );
+
+  // Filtrar el inventario por recopilatorios
+  const compilationsFilteredData = data.filter(
+    (item) =>
+      item["OVERALL NUMBER"] == "COMPILATION" ||
+      item["OVERALL NUMBER"] == "COMPILATION2" ||
+      item["OVERALL NUMBER"] == "COMPILATION3" ||
+      item["OVERALL NUMBER"] == "COMPILATION4",
   );
 
   const renderItem = ({ item, index }) => {
@@ -394,11 +404,124 @@ export default function CoversScreen() {
     );
   };
 
+  const renderCompilationItem = ({ item }) => {
+    const imageNumber =
+      item["OVERALL NUMBER"] == "COMPILATION" ? "COMPILATION" : item["OVERALL NUMBER"] == "COMPILATION2" ? "COMPILATION2" : item["OVERALL NUMBER"] == "COMPILATION3" ? "COMPILATION3" : "COMPILATION4";
+    let imageSource = null;
+
+    try {
+      // Construimos la ruta relativa para require.context: ./year_edit/number.jpg
+      // Nota: require.context usa rutas relativas desde este archivo
+      const imagePath = `./${item["YEAR EDIT"]}/${imageNumber}.jpg`;
+      imageSource = images(imagePath);
+    } catch (error) {
+      console.log(
+        `Imagen no encontrada: ${item["YEAR EDIT"]}/${imageNumber}.jpg`,
+      );
+    }
+
+    return (
+      <View
+        style={[
+          styles.specialCard,
+          item.OWNED === "NO"
+            ? { borderColor: "#f0394d" }
+            : { borderColor: "#006845" },
+        ]}
+      >
+        {imageSource ? (
+          <Image
+            source={imageSource}
+            style={styles.image}
+            resizeMode="contain"
+          />
+        ) : (
+          <View style={[styles.image, styles.placeholder]}>
+            <Text style={styles.placeholderText}>No Image</Text>
+          </View>
+        )}
+        <Text style={styles.coverText} numberOfLines={2}>
+          {item.MONTH}-{item["YEAR DATE"]}
+        </Text>
+        <Text style={styles.coverText} numberOfLines={4}>
+          Poster:{" "}
+          {item["POSTER THEME"] == "-" ? "No incluye" : item["POSTER THEME"]}
+        </Text>
+        <Pressable
+          style={[
+            styles.buttonPoster,
+            item.POSTER !== "YES"
+              ? { backgroundColor: "#f0394d" }
+              : { backgroundColor: "#006845" },
+          ]}
+          onPress={async () => {
+            const newData = data.map((el) => {
+              if (el.COVER === item.COVER) {
+                return { ...el, POSTER: el.POSTER !== "YES" ? "YES" : "NO" };
+              }
+
+              return el;
+            });
+            setData(newData);
+            await AsyncStorage.setItem("mexicoDB", JSON.stringify(newData));
+          }}
+        >
+          <Text style={styles.buttonText}>
+            <FontAwesome6 name="sheet-plastic" size={24} color="white" />
+          </Text>
+        </Pressable>
+        <Pressable
+          style={[
+            styles.button,
+            item.OWNED === "NO"
+              ? { backgroundColor: "#f0394d" }
+              : { backgroundColor: "#006845" },
+          ]}
+          onPress={async () => {
+            const newData = data.map((el) => {
+              if (el.COVER === item.COVER) {
+                return { ...el, OWNED: el.OWNED === "NO" ? "YES" : "NO" };
+              }
+
+              return el;
+            });
+            setData(newData);
+            await AsyncStorage.setItem("mexicoDB", JSON.stringify(newData));
+          }}
+        >
+          <Text style={styles.buttonText}>
+            {item.OWNED === "NO" ? "NO" : "SÍ"}
+          </Text>
+        </Pressable>
+        <Pressable
+          style={[
+            styles.buttonObservation,
+            item.OBSERVATION === "-" || !item.OBSERVATION
+              ? { backgroundColor: "#f0394d" }
+              : { backgroundColor: "#006845" },
+          ]}
+          onPress={() => {
+            setSelectedItem(item);
+            setObservationText(
+              item.OBSERVATION === "-" ? "" : item.OBSERVATION || "",
+            );
+            setSelectedImage(imageSource);
+            setModalVisible(true);
+          }}
+        >
+          <Text style={styles.buttonText}>
+            <FontAwesome6 name="commenting" size={24} color="white" />
+          </Text>
+        </Pressable>
+      </View>
+    );
+  };
+
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.header}>
         <Text style={styles.title}>
-          Revistas {year ? `Año ${year}` : "Especiales"} {country}
+          {year ? `Revistas Año ${year}` : type == "special" ? "Revistas Especiales" : "Recopilatorios"} {country}
         </Text>
       </View>
       {year ? (
@@ -410,10 +533,19 @@ export default function CoversScreen() {
           contentContainerStyle={styles.grid}
           columnWrapperStyle={styles.row}
         />
-      ) : (
+      ) : type == "special" ? (
         <FlatList
           data={specialsFilteredData}
           renderItem={renderSpecialItem}
+          keyExtractor={(item, index) => index.toString()}
+          numColumns={2}
+          contentContainerStyle={styles.grid}
+          columnWrapperStyle={styles.row}
+        />
+      ) : (
+        <FlatList
+          data={compilationsFilteredData}
+          renderItem={renderCompilationItem}
           keyExtractor={(item, index) => index.toString()}
           numColumns={2}
           contentContainerStyle={styles.grid}
