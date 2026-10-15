@@ -1,4 +1,4 @@
-import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
+import FontAwesome6 from "@expo/vector-icons/FontAwesome6";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { Link, useLocalSearchParams } from "expo-router";
 import { useEffect, useState } from "react";
@@ -128,7 +128,12 @@ export default function CoversScreen() {
         // Código para agregar elementos faltantes (solo COMPILATIONS)
         try {
           let itemsAdded = false;
-          const targetCompilations = ["COMPILATION", "COMPILATION2", "COMPILATION3", "COMPILATION4"];
+          const targetCompilations = [
+            "COMPILATION",
+            "COMPILATION2",
+            "COMPILATION3",
+            "COMPILATION4",
+          ];
 
           inventory.forEach((invItem) => {
             if (targetCompilations.includes(invItem["OVERALL NUMBER"])) {
@@ -159,7 +164,6 @@ export default function CoversScreen() {
         }
 
         setData(parsed);
-
       }
     };
     loadData();
@@ -187,7 +191,11 @@ export default function CoversScreen() {
     (item) =>
       item["YEAR EDIT"] == year &&
       item["OVERALL NUMBER"] !== "SPECIAL" &&
-      item["OVERALL NUMBER"] !== "SPECIAL2",
+      item["OVERALL NUMBER"] !== "SPECIAL2" &&
+      item["OVERALL NUMBER"] !== "COMPILATION" &&
+      item["OVERALL NUMBER"] !== "COMPILATION2" &&
+      item["OVERALL NUMBER"] !== "COMPILATION3" &&
+      item["OVERALL NUMBER"] !== "COMPILATION4",
   );
 
   // Filtrar el inventario por especiales
@@ -439,7 +447,13 @@ export default function CoversScreen() {
 
   const renderCompilationItem = ({ item }) => {
     const imageNumber =
-      item["OVERALL NUMBER"] == "COMPILATION" ? "COMPILATION" : item["OVERALL NUMBER"] == "COMPILATION2" ? "COMPILATION2" : item["OVERALL NUMBER"] == "COMPILATION3" ? "COMPILATION3" : "COMPILATION4";
+      item["OVERALL NUMBER"] == "COMPILATION"
+        ? "COMPILATION"
+        : item["OVERALL NUMBER"] == "COMPILATION2"
+          ? "COMPILATION2"
+          : item["OVERALL NUMBER"] == "COMPILATION3"
+            ? "COMPILATION3"
+            : "COMPILATION4";
     let imageSource = null;
 
     try {
@@ -554,7 +568,12 @@ export default function CoversScreen() {
     <SafeAreaView style={styles.container}>
       <View style={styles.header}>
         <Text style={styles.title}>
-          {year ? `Revistas Año ${year}` : type == "special" ? "Revistas Especiales" : "Recopilatorios"} {country}
+          {year
+            ? `Revistas Año ${year}`
+            : type == "special"
+              ? "Revistas Especiales"
+              : "Recopilatorios"}{" "}
+          {country}
         </Text>
       </View>
       {year ? (
